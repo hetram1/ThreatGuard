@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: threatguard-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: threatguard
+      POSTGRES_USER: threatguard
+      POSTGRES_PASSWORD: threatguard
+    ports:
+      - "5432:5432"
+    volumes:
+      - threatguard_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U threatguard -d threatguard"
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  threatguard_postgres_data:

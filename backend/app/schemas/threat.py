@@ -54,3 +54,22 @@ class AnalysisResponse(BaseModel):
 class ModelInfoResponse(BaseModel):
     service: str
     models: dict[str, dict[str, Any]]
+
+
+class AnalysisHistoryItem(BaseModel):
+    id: int
+    input_type: str
+    input_value: str
+    prediction: str
+    risk_score: float
+    risk_band: str
+    confidence: float
+    model_name: str
+    model_version: str
+    reasons: list[str]
+    created_at: str
+
+
+class AnalysisHistoryResponse(BaseModel):
+    total: int
+    items: list[AnalysisHistoryItem]

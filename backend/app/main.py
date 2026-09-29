@@ -1,5 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import Depends
+from sqlalchemy.orm import Session
+
+from .api.history import router as history_router
+from .database.database import get_db
+from .services.analysis_repository import AnalysisRepository
 
 from .schemas.threat import (
     AnalysisResponse,
@@ -72,10 +78,17 @@ def health() -> HealthResponse:
 )
 def analyze_url(
     request: URLAnalysisRequest,
+    db: Session = Depends(get_db),
 ) -> AnalysisResponse:
     try:
         result = threat_service.analyze_url(
             request.url
+        )
+
+        AnalysisRepository.create(
+            db,
+            result,
+            request.url,
         )
 
         return AnalysisResponse(
@@ -109,10 +122,17 @@ def analyze_url(
 )
 def analyze_sms(
     request: SMSAnalysisRequest,
+    db: Session = Depends(get_db),
 ) -> AnalysisResponse:
     try:
         result = threat_service.analyze_sms(
             request.text
+        )
+
+        AnalysisRepository.create(
+            db,
+            result,
+            request.text,
         )
 
         return AnalysisResponse(
@@ -146,10 +166,17 @@ def analyze_sms(
 )
 def analyze(
     request: UnifiedAnalysisRequest,
+    db: Session = Depends(get_db),
 ) -> AnalysisResponse:
     try:
         result = threat_service.analyze(
             request.input_type,
+            request.value,
+        )
+
+        AnalysisRepository.create(
+            db,
+            result,
             request.value,
         )
 
@@ -206,3 +233,6 @@ def model_info() -> ModelInfoResponse:
             },
         },
     )
+
+
+app.include_router(history_router)
