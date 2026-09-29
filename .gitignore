@@ -1,19 +1,52 @@
+# Python
 __pycache__/
 *.py[cod]
-*.so
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
 .venv/
 venv/
+env/
+
+# Environment / secrets
 .env
+.env.*
+!.env.example
+
+# Jupyter
 .ipynb_checkpoints/
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-models/*
-!models/.gitkeep
-frontend/node_modules/
-frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
-.DS_Store
+
+# Logs
 *.log
+
+# Large raw datasets
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated processed datasets
+data/processed/*.csv
+data/processed/*.parquet
+
+# Trained model binaries
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/**/*.joblib
+models/**/*.pkl
+
+# Generated audit outputs
+models/audit/*.csv
+
+# Generated metrics are small and reproducible, keep JSON
+# models/**/*.json is intentionally NOT ignored
+
+# Local caches
+.cache/
