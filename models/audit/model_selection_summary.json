@@ -1,0 +1,38 @@
+{
+  "benchmark": "curated developer sanity set",
+  "total_cases": 40,
+  "benign_cases": 20,
+  "suspicious_cases": 20,
+  "xgboost": {
+    "accuracy": 0.85,
+    "precision": 0.7692307692307693,
+    "recall": 1.0,
+    "f1": 0.8695652173913043,
+    "confusion_matrix": [
+      [
+        14,
+        6
+      ],
+      [
+        0,
+        20
+      ]
+    ]
+  },
+  "character_tfidf": {
+    "accuracy": 0.85,
+    "precision": 0.7692307692307693,
+    "recall": 1.0,
+    "f1": 0.8695652173913043,
+    "confusion_matrix": [
+      [
+        14,
+        6
+      ],
+      [
+        0,
+        20
+      ]
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "audit": "domain_grouped_generalization",
+  "dataset_rows_after_url_dedup": 235370,
+  "unique_domains": 219096,
+  "training_samples": 188068,
+  "test_samples": 47302,
+  "training_domains": 175276,
+  "test_domains": 43820,
+  "domain_overlap": 0,
+  "duplicated_feature_signature_rows": 127650,
+  "unique_feature_signatures": 107720,
+  "roc_auc": 0.9988385623685119,
+  "pr_auc": 0.9990087910539243,
+  "threshold_results": [
+    {
+      "threshold": 0.2,
+      "accuracy": 0.9936789142108156,
+      "precision": 0.9902931564313936,
+      "recall": 0.9950985197529654,
+      "f1": 0.9926900227367186,
+      "true_negatives": 26701,
+      "false_positives": 199,
+      "false_negatives": 100,
+      "true_positives": 20302
+    },
+    {
+      "threshold": 0.3,
+      "accuracy": 0.9951164855608642,
+      "precision": 0.9943630214205186,
+      "recall": 0.9943142829134398,
+      "f1": 0.9943386515697376,
+      "true_negatives": 26785,
+      "false_positives": 115,
+      "false_negatives": 116,
+      "true_positives": 20286
+    },
+    {
+      "threshold": 0.4,
+      "accuracy": 0.9957507082152974,
+      "precision": 0.9969006739804201,
+      "recall": 0.9932359572590922,
+      "f1": 0.9950649414422156,
+      "true_negatives": 26837,
+      "false_positives": 63,
+      "false_negatives": 138,
+      "true_positives": 20264
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9958141304807407,
+      "precision": 0.9979789017056098,
+      "recall": 0.9923046760121557,
+      "f1": 0.9951337003539127,
+      "true_negatives": 26859,
+      "false_positives": 41,
+      "false_negatives": 157,
+      "true_positives": 20245
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 0.995983256521923,
+      "precision": 0.9991110233109443,
+      "recall": 0.9915694539751004,
+      "f1": 0.9953259532595325,
+      "true_negatives": 26882,
+      "false_positives": 18,
+      "false_negatives": 172,
+      "true_positives": 20230
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 0.995792989725593,
+      "precision": 0.9995549181543939,
+      "recall": 0.9906871875306342,
+      "f1": 0.995101297294636,
+      "true_negatives": 26891,
+      "false_positives": 9,
+      "false_negatives": 190,
+      "true_positives": 20212
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 0.9943131368652488,
+      "precision": 0.9999503352371493,
+      "recall": 0.9868640329379472,
+      "f1": 0.993364087130276,
+      "true_negatives": 26899,
+      "false_positives": 1,
+      "false_negatives": 268,
+      "true_positives": 20134
+    }
+  ],
+  "model": "/home/hetram/projects/ThreatGuard/models/url_xgboost_v2.joblib"
+}

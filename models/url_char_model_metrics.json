@@ -1,0 +1,27 @@
+{
+  "model": "character_tfidf_logistic_regression",
+  "dataset_rows": 235370,
+  "train_samples": 188296,
+  "test_samples": 47074,
+  "character_ngram_range": [
+    3,
+    5
+  ],
+  "character_max_features": 120000,
+  "accuracy": 0.9980031439860645,
+  "precision": 0.9999000699510343,
+  "recall": 0.9954237962594509,
+  "f1": 0.9976569121092776,
+  "roc_auc": 0.9990970682521338,
+  "pr_auc": 0.999308450303782,
+  "confusion_matrix": [
+    [
+      26968,
+      2
+    ],
+    [
+      92,
+      20012
+    ]
+  ]
+}
