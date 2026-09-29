@@ -1,0 +1,145 @@
+{
+  "model": "word + character TF-IDF + structured SMS security features + Logistic Regression",
+  "label_convention": {
+    "0": "legitimate",
+    "1": "scam"
+  },
+  "train_samples": 69237,
+  "validation_samples": 8191,
+  "test_samples": 8201,
+  "security_feature_count": 38,
+  "security_features": [
+    "text_length",
+    "word_count",
+    "avg_word_length",
+    "digit_count",
+    "digit_ratio",
+    "uppercase_count",
+    "uppercase_ratio",
+    "special_char_count",
+    "special_char_ratio",
+    "exclamation_count",
+    "question_count",
+    "url_count",
+    "has_url",
+    "has_ip_address",
+    "phone_like_count",
+    "has_phone",
+    "money_count",
+    "has_money",
+    "otp_count",
+    "has_otp",
+    "urgency_count",
+    "has_urgency",
+    "kyc_count",
+    "has_kyc",
+    "bank_count",
+    "has_bank",
+    "payment_count",
+    "has_payment",
+    "threat_count",
+    "has_threat",
+    "reward_count",
+    "has_reward",
+    "social_engineering_count",
+    "has_social_engineering",
+    "obfuscation_count",
+    "has_obfuscation",
+    "url_length_max",
+    "url_has_https"
+  ],
+  "validation": {
+    "accuracy": 0.9794896837992919,
+    "precision": 0.9695465077788812,
+    "recall": 0.9747088186356073,
+    "f1": 0.9721208098240955,
+    "roc_auc": 0.997233945481018,
+    "pr_auc": 0.9951304699478525
+  },
+  "test": {
+    "accuracy": 0.9765882209486648,
+    "precision": 0.9650280435499835,
+    "recall": 0.9714380604450349,
+    "f1": 0.968222442899702,
+    "roc_auc": 0.9962594443367255,
+    "pr_auc": 0.9933654030136126
+  },
+  "threshold_analysis": {
+    "0.2": {
+      "accuracy": 0.9658578222168028,
+      "precision": 0.9249922191098662,
+      "recall": 0.9870474925273995,
+      "f1": 0.9550128534704371
+    },
+    "0.3": {
+      "accuracy": 0.974027557614925,
+      "precision": 0.9492614001284522,
+      "recall": 0.9817336433078712,
+      "f1": 0.9652244897959184
+    },
+    "0.4": {
+      "accuracy": 0.9757346665040849,
+      "precision": 0.9579804560260586,
+      "recall": 0.9767519096645633,
+      "f1": 0.9672751192238118
+    },
+    "0.5": {
+      "accuracy": 0.9765882209486648,
+      "precision": 0.9650280435499835,
+      "recall": 0.9714380604450349,
+      "f1": 0.968222442899702
+    },
+    "0.6": {
+      "accuracy": 0.9764662845994391,
+      "precision": 0.9709224598930482,
+      "recall": 0.9647957489206244,
+      "f1": 0.9678494086290188
+    },
+    "0.7": {
+      "accuracy": 0.975246921107182,
+      "precision": 0.975609756097561,
+      "recall": 0.9564928595151112,
+      "f1": 0.9659567331879926
+    },
+    "0.8": {
+      "accuracy": 0.969515912693574,
+      "precision": 0.9805081796032022,
+      "recall": 0.9355695782132182,
+      "f1": 0.9575118966689327
+    },
+    "0.9": {
+      "accuracy": 0.9593951957078405,
+      "precision": 0.9890430971512053,
+      "recall": 0.899368980405181,
+      "f1": 0.9420768829361628
+    }
+  },
+  "language_results": {
+    "English": {
+      "samples": 7633,
+      "scam_samples": 2904,
+      "accuracy": 0.9752390934101925,
+      "precision": 0.9637854458489922,
+      "recall": 0.9714187327823691,
+      "f1": 0.9675870348139256
+    },
+    "Hindi": {
+      "samples": 460,
+      "scam_samples": 11,
+      "accuracy": 0.9934782608695653,
+      "precision": 1.0,
+      "recall": 0.7272727272727273,
+      "f1": 0.8421052631578947
+    },
+    "Hinglish": {
+      "samples": 108,
+      "scam_samples": 96,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "false_positives": 106,
+  "false_negatives": 86
+}

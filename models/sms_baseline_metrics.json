@@ -1,0 +1,132 @@
+{
+  "model": "word + character TF-IDF + Logistic Regression",
+  "label_convention": {
+    "0": "legitimate",
+    "1": "scam"
+  },
+  "training_samples": 69237,
+  "validation_samples": 8191,
+  "test_samples": 8201,
+  "word_tfidf": {
+    "analyzer": "word",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 120000,
+    "min_df": 2,
+    "max_df": 0.995,
+    "sublinear_tf": true
+  },
+  "char_tfidf": {
+    "analyzer": "char",
+    "ngram_range": [
+      3,
+      5
+    ],
+    "max_features": 120000,
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "logistic_regression": {
+    "C": 4.0,
+    "class_weight": "balanced",
+    "solver": "liblinear",
+    "max_iter": 1000
+  },
+  "validation": {
+    "accuracy": 0.981320962031498,
+    "precision": 0.9715608465608465,
+    "recall": 0.9777038269550749,
+    "f1": 0.9746226571570742,
+    "roc_auc": 0.997470407015432,
+    "pr_auc": 0.9961537444411128
+  },
+  "test": {
+    "accuracy": 0.9782953298378246,
+    "precision": 0.9688844753392917,
+    "recall": 0.972102291597476,
+    "f1": 0.9704907161803713,
+    "roc_auc": 0.9964485390434177,
+    "pr_auc": 0.9943781475226073
+  },
+  "threshold_analysis": {
+    "0.2": {
+      "accuracy": 0.967442994756737,
+      "precision": 0.9268823895457374,
+      "recall": 0.9893723015609432,
+      "f1": 0.9571084337349398
+    },
+    "0.3": {
+      "accuracy": 0.9745153030118279,
+      "precision": 0.9490384615384615,
+      "recall": 0.9833942211889738,
+      "f1": 0.9659109443810145
+    },
+    "0.4": {
+      "accuracy": 0.977319839044019,
+      "precision": 0.9605477665471145,
+      "recall": 0.9784124875456659,
+      "f1": 0.9693978282329714
+    },
+    "0.5": {
+      "accuracy": 0.9782953298378246,
+      "precision": 0.9688844753392917,
+      "recall": 0.972102291597476,
+      "f1": 0.9704907161803713
+    },
+    "0.6": {
+      "accuracy": 0.9776856480916961,
+      "precision": 0.9751344086021505,
+      "recall": 0.9637994021919628,
+      "f1": 0.969433773175213
+    },
+    "0.7": {
+      "accuracy": 0.9754907938056334,
+      "precision": 0.978542234332425,
+      "recall": 0.9541680504815676,
+      "f1": 0.966201446107281
+    },
+    "0.8": {
+      "accuracy": 0.9721985123765394,
+      "precision": 0.984,
+      "recall": 0.9395549651278645,
+      "f1": 0.9612640163098879
+    },
+    "0.9": {
+      "accuracy": 0.9607364955493233,
+      "precision": 0.9894430287586458,
+      "recall": 0.9026901361673862,
+      "f1": 0.944077804793331
+    }
+  },
+  "language_results": {
+    "English": {
+      "samples": 7633,
+      "scam_samples": 2904,
+      "accuracy": 0.9773352548146207,
+      "precision": 0.9681179293794995,
+      "recall": 0.9724517906336089,
+      "f1": 0.9702800206150146
+    },
+    "Hindi": {
+      "samples": 460,
+      "scam_samples": 11,
+      "accuracy": 0.991304347826087,
+      "precision": 1.0,
+      "recall": 0.6363636363636364,
+      "f1": 0.7777777777777778
+    },
+    "Hinglish": {
+      "samples": 108,
+      "scam_samples": 96,
+      "accuracy": 0.9907407407407407,
+      "precision": 0.9896907216494846,
+      "recall": 1.0,
+      "f1": 0.9948186528497409
+    }
+  },
+  "false_positives": 94,
+  "false_negatives": 84,
+  "random_state": 42
+}

@@ -1,0 +1,96 @@
+{
+  "model_name": "ThreatGuard SMS Scam Detector",
+  "version": "v1",
+  "status": "production_candidate",
+  "model_type": "word + character TF-IDF + Logistic Regression",
+  "label_convention": {
+    "0": "legitimate",
+    "1": "scam"
+  },
+  "training_dataset": {
+    "name": "sidzzz07/scamshield-dataset",
+    "cleaning": [
+      "official train/validation/test splits preserved",
+      "empty messages removed",
+      "exact duplicate texts removed within each split"
+    ],
+    "train_samples": 69237,
+    "validation_samples": 8191,
+    "test_samples": 8201
+  },
+  "word_tfidf": {
+    "analyzer": "word",
+    "ngram_range": [1, 2],
+    "max_features": 120000,
+    "min_df": 2,
+    "max_df": 0.995,
+    "sublinear_tf": true,
+    "strip_accents": "unicode",
+    "lowercase": true
+  },
+  "character_tfidf": {
+    "analyzer": "char",
+    "ngram_range": [3, 5],
+    "max_features": 120000,
+    "min_df": 2,
+    "sublinear_tf": true,
+    "lowercase": true
+  },
+  "classifier": {
+    "type": "LogisticRegression",
+    "C": 4.0,
+    "class_weight": "balanced",
+    "solver": "liblinear",
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "threshold": 0.5,
+  "validation": {
+    "accuracy": 0.981321,
+    "precision": 0.971561,
+    "recall": 0.977704,
+    "f1": 0.974623,
+    "roc_auc": 0.997470,
+    "pr_auc": 0.996154
+  },
+  "test": {
+    "accuracy": 0.978295,
+    "precision": 0.968884,
+    "recall": 0.972102,
+    "f1": 0.970491,
+    "roc_auc": 0.996449,
+    "pr_auc": 0.994378,
+    "false_positives": 94,
+    "false_negatives": 84
+  },
+  "language_evaluation": {
+    "English": {
+      "samples": 7633,
+      "scam_samples": 2904,
+      "f1": 0.970280
+    },
+    "Hindi": {
+      "samples": 460,
+      "scam_samples": 11,
+      "f1": 0.777778
+    },
+    "Hinglish": {
+      "samples": 108,
+      "scam_samples": 96,
+      "f1": 0.994819
+    }
+  },
+  "robustness_audit": {
+    "benign_cases_correct": 10,
+    "benign_cases_total": 15,
+    "scam_cases_correct": 21,
+    "scam_cases_total": 23,
+    "note": "Curated developer-defined sanity cases; not part of training or official test evaluation."
+  },
+  "limitations": [
+    "SMS classification is a risk signal, not proof of malicious intent.",
+    "The official test set contains relatively few Hindi scam examples.",
+    "Threshold 0.5 was selected using validation F1 and then evaluated once on the test set.",
+    "The model should not be interpreted as a calibrated probability estimator."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "total_samples": 43,
+  "category_summary": {
+    "BENIGN": {
+      "samples": 15,
+      "correct": 10,
+      "accuracy": 0.6666666666666666
+    },
+    "SCAM": {
+      "samples": 23,
+      "correct": 21,
+      "accuracy": 0.9130434782608695
+    }
+  },
+  "model_threshold": 0.5,
+  "note": "Curated security sanity test. Expected labels are developer-defined for robustness testing and are not part of the training dataset."
+}
