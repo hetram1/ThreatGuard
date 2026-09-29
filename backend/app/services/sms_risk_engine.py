@@ -284,6 +284,15 @@ class SMSRiskEngine:
             else "legitimate"
         )
 
+        # Heuristic signals are explanatory indicators,
+        # not model decisions. Keep the explanation aligned
+        # with the final classification shown to the user.
+        reasons = (
+            signals["reasons"]
+            if prediction == "scam"
+            else []
+        )
+
         return {
             "text": normalized_text,
             "prediction": prediction,
@@ -312,7 +321,7 @@ class SMSRiskEngine:
                     "+ Logistic Regression"
                 ),
             },
-            "reasons": signals["reasons"],
+            "reasons": reasons,
             "signals": {
                 "security_terms": signals[
                     "security_terms"

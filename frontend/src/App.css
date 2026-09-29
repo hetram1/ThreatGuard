@@ -980,3 +980,104 @@ button {
     gap: 8px;
   }
 }
+
+
+/* ===== QR SCANNER ===== */
+
+.qr-scanner-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 4px 0 0;
+}
+
+.qr-reader-shell {
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #0a0f18;
+}
+
+#threatguard-qr-reader {
+  width: min(100%, 520px);
+  margin: 0 auto;
+}
+
+#threatguard-qr-reader video {
+  width: 100% !important;
+  max-width: 520px !important;
+  min-height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#threatguard-qr-reader canvas {
+  max-width: 100%;
+}
+
+#threatguard-qr-reader__scan_region {
+  border-radius: 14px;
+}
+
+.qr-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.qr-result {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  overflow: hidden;
+}
+
+.qr-result code {
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.qr-safety-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.qr-safety-note svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+@media (max-width: 720px) {
+  .qr-reader-shell {
+    min-height: 260px;
+    padding: 10px;
+  }
+
+  #threatguard-qr-reader video {
+    min-height: 240px;
+  }
+}
