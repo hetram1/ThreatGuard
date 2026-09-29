@@ -1,0 +1,29 @@
+{
+  "model": "character_tfidf_logistic_regression_v4",
+  "uci_rows": 235370,
+  "benign_augmentation_rows": 100000,
+  "combined_rows": 335370,
+  "train_samples": 268296,
+  "test_samples": 67074,
+  "character_ngram_range": [
+    3,
+    5
+  ],
+  "character_max_features": 150000,
+  "accuracy": 0.9973611235351999,
+  "precision": 0.9997492100115364,
+  "recall": 0.9914444886589734,
+  "f1": 0.9955795309807447,
+  "roc_auc": 0.998569446542446,
+  "pr_auc": 0.9982199556806841,
+  "confusion_matrix": [
+    [
+      46965,
+      5
+    ],
+    [
+      172,
+      19932
+    ]
+  ]
+}

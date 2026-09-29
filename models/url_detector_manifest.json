@@ -1,0 +1,45 @@
+{
+  "model_name": "ThreatGuard URL Detector",
+  "version": "v5",
+  "model_type": "Character TF-IDF + engineered URL features + Logistic Regression",
+  "label_convention": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
+  "character_tfidf": {
+    "analyzer": "char",
+    "ngram_range": [3, 5],
+    "max_features": 150000,
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "engineered_feature_version": "v2",
+  "engineered_feature_count": 45,
+  "training_data": {
+    "uci_phiusiil_rows": 235370,
+    "basic_benign_augmentation_rows": 100000,
+    "deep_path_benign_augmentation_rows": 200000,
+    "combined_rows": 535370
+  },
+  "evaluation": {
+    "sanity_total": 40,
+    "sanity_correct": 39,
+    "sanity_accuracy": 0.975,
+    "benign_sanity_correct": 19,
+    "benign_sanity_total": 20,
+    "suspicious_sanity_correct": 20,
+    "suspicious_sanity_total": 20,
+    "unseen_domain_count": 43819,
+    "unseen_domain_test_urls": 47005,
+    "unseen_domain_accuracy": 0.9988724603765556,
+    "unseen_domain_precision": 0.9999499324087519,
+    "unseen_domain_recall": 0.9974031162604874,
+    "unseen_domain_f1": 0.9986749006175463,
+    "unseen_domain_roc_auc": 0.9998004914394784,
+    "unseen_domain_pr_auc": 0.9998246337089006,
+    "unseen_domain_false_positives": 1,
+    "unseen_domain_false_negatives": 52
+  },
+  "threshold": 0.50,
+  "important_note": "The detector performs lexical URL analysis and should be treated as a risk signal, not proof that a URL is safe or malicious."
+}

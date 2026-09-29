@@ -1,0 +1,36 @@
+{
+  "model": "character_tfidf_logistic_regression_v5",
+  "sanity": {
+    "total": 40,
+    "correct": 39,
+    "accuracy": 0.975,
+    "benign_correct": 19,
+    "benign_total": 20,
+    "suspicious_correct": 20,
+    "suspicious_total": 20
+  },
+  "unseen_domain": {
+    "unique_domains": 219094,
+    "train_domains": 175275,
+    "test_domains": 43819,
+    "test_urls": 47005,
+    "accuracy": 0.9988724603765556,
+    "precision": 0.9999499324087519,
+    "recall": 0.9974031162604874,
+    "f1": 0.9986749006175463,
+    "roc_auc": 0.9998004914394784,
+    "pr_auc": 0.9998246337089006,
+    "confusion_matrix": [
+      [
+        26980,
+        1
+      ],
+      [
+        52,
+        19972
+      ]
+    ],
+    "false_positives": 1,
+    "false_negatives": 52
+  }
+}
