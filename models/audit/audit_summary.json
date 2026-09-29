@@ -1,0 +1,9 @@
+{
+  "original_samples": 235795,
+  "unique_urls": 235370,
+  "independent_test_samples": 47074,
+  "roc_auc": 0.9993539619193393,
+  "pr_auc": 0.9994569586668459,
+  "false_positives_at_0_5": 2,
+  "false_negatives_at_0_5": 76
+}
