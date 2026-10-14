@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "input": "https://[::1]evil.com",
+      "status": 422,
+      "error": "Value error, Invalid HTTP(S) URL: Invalid IPv6 URL"
+    },
+    {
+      "input": "https://example.com:",
+      "status": 422,
+      "error": "Value error, Invalid hostname or port syntax."
+    },
+    {
+      "input": "https://a@b@example.com",
+      "status": 422,
+      "error": "Value error, User information must percent-encode embedded @ characters."
+    }
+  ],
+  "existing_history_unchanged": true
+}

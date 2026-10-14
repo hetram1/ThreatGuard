@@ -27,7 +27,7 @@ async function request(endpoint, options = {}) {
 
   if (!response.ok) {
     throw new Error(
-      data.detail ||
+      (Array.isArray(data.detail) ? data.detail.map((item) => item.msg || "Invalid input").join("; ") : data.detail) ||
       `Request failed with status ${response.status}`,
     );
   }

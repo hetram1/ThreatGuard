@@ -6,3 +6,5 @@ sqlalchemy
 psycopg[binary]
 pytest
 httpx
+
+-r ../requirements-ml.txt

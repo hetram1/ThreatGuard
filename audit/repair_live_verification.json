@@ -1,0 +1,35 @@
+{
+  "live_checks": [
+    {
+      "input": "github.com",
+      "prediction": "phishing",
+      "risk_score": 88.61,
+      "artifact_sha256": "7d5e452ec9cc8d038ee2d79f8f1cf69e3a34d921d17a821abf559127f3100c32",
+      "equals_direct": true
+    },
+    {
+      "input": "https://github.com/",
+      "prediction": "phishing",
+      "risk_score": 88.61,
+      "artifact_sha256": "7d5e452ec9cc8d038ee2d79f8f1cf69e3a34d921d17a821abf559127f3100c32",
+      "equals_direct": true
+    },
+    {
+      "input": "https://docs.python.org/3/library/urllib.parse.html",
+      "prediction": "legitimate",
+      "risk_score": 33.05,
+      "artifact_sha256": "7d5e452ec9cc8d038ee2d79f8f1cf69e3a34d921d17a821abf559127f3100c32",
+      "equals_direct": true
+    },
+    {
+      "input": "Your bank access expires in 30 minutes. Send your OTP and card PIN to this number to keep it active.",
+      "prediction": "scam",
+      "risk_score": 90.2,
+      "artifact_sha256": "32f9bfb8dda6480ac9b925b13e1d4d383fa51dfee3aad23bd00c08a6b983ddc5",
+      "equals_direct": true
+    }
+  ],
+  "invalid_inputs_rejected": true,
+  "existing_history_unchanged": true,
+  "preserved_history_rows": 41
+}

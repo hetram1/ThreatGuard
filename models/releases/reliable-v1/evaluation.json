@@ -1,0 +1,553 @@
+{
+  "release_manifest_sha256": "2342c5cb702c6ef28938a6081f76b068a1747e9b79b76266b0a8e9b627f1a9d7",
+  "note": "Historical internal grouped holdouts. Not external evidence. Legacy comparison restricted to rows/groups absent from legacy training where reconstructable.",
+  "models": {
+    "url": {
+      "test": {
+        "rows": 23208,
+        "positives": 9841,
+        "accuracy": 0.8450103412616339,
+        "precision": 0.8798977853492334,
+        "recall": 0.7347830505029976,
+        "f1": 0.8008195359654466,
+        "false_positive_rate": 0.07383855764195407,
+        "confusion_matrix": [
+          [
+            12380,
+            987
+          ],
+          [
+            2610,
+            7231
+          ]
+        ],
+        "brier": 0.11335440156410674,
+        "log_loss": 0.3634046041209975,
+        "roc_auc": 0.8992902120905004,
+        "pr_auc": 0.9048096408931572
+      },
+      "test_uncalibrated": {
+        "rows": 23208,
+        "positives": 9841,
+        "accuracy": 0.8450103412616339,
+        "precision": 0.8798977853492334,
+        "recall": 0.7347830505029976,
+        "f1": 0.8008195359654466,
+        "false_positive_rate": 0.07383855764195407,
+        "confusion_matrix": [
+          [
+            12380,
+            987
+          ],
+          [
+            2610,
+            7231
+          ]
+        ],
+        "brier": 0.11335440156410674,
+        "log_loss": 0.3634046041209975,
+        "roc_auc": 0.8992902120905004,
+        "pr_auc": 0.9048096408931572
+      },
+      "by_language": {
+        "n/a": {
+          "rows": 23208,
+          "positives": 9841,
+          "accuracy": 0.8450103412616339,
+          "precision": 0.8798977853492334,
+          "recall": 0.7347830505029976,
+          "f1": 0.8008195359654466,
+          "false_positive_rate": 0.07383855764195407,
+          "confusion_matrix": [
+            [
+              12380,
+              987
+            ],
+            [
+              2610,
+              7231
+            ]
+          ],
+          "brier": 0.11335440156410674,
+          "log_loss": 0.3634046041209975,
+          "roc_auc": 0.8992902120905004,
+          "pr_auc": 0.9048096408931572
+        }
+      },
+      "by_source": {
+        "UCI PhiUSIIL": {
+          "rows": 23208,
+          "positives": 9841,
+          "accuracy": 0.8450103412616339,
+          "precision": 0.8798977853492334,
+          "recall": 0.7347830505029976,
+          "f1": 0.8008195359654466,
+          "false_positive_rate": 0.07383855764195407,
+          "confusion_matrix": [
+            [
+              12380,
+              987
+            ],
+            [
+              2610,
+              7231
+            ]
+          ],
+          "brier": 0.11335440156410674,
+          "log_loss": 0.3634046041209975,
+          "roc_auc": 0.8992902120905004,
+          "pr_auc": 0.9048096408931572
+        }
+      },
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 5848,
+          "mean_probability": 0.04755736583841695,
+          "observed_threat_fraction": 0.0856703146374829
+        },
+        {
+          "lower": 0.1,
+          "count": 3941,
+          "mean_probability": 0.14608175640982796,
+          "observed_threat_fraction": 0.15935041867546307
+        },
+        {
+          "lower": 0.2,
+          "count": 2440,
+          "mean_probability": 0.2456230339146253,
+          "observed_threat_fraction": 0.22377049180327868
+        },
+        {
+          "lower": 0.3,
+          "count": 1611,
+          "mean_probability": 0.3474636297069593,
+          "observed_threat_fraction": 0.3078833022967101
+        },
+        {
+          "lower": 0.4,
+          "count": 1150,
+          "mean_probability": 0.44879469257212723,
+          "observed_threat_fraction": 0.38173913043478264
+        },
+        {
+          "lower": 0.5,
+          "count": 773,
+          "mean_probability": 0.5474109211095134,
+          "observed_threat_fraction": 0.4489003880983182
+        },
+        {
+          "lower": 0.6,
+          "count": 642,
+          "mean_probability": 0.648206028510203,
+          "observed_threat_fraction": 0.5903426791277259
+        },
+        {
+          "lower": 0.7,
+          "count": 588,
+          "mean_probability": 0.750024312449977,
+          "observed_threat_fraction": 0.7091836734693877
+        },
+        {
+          "lower": 0.8,
+          "count": 876,
+          "mean_probability": 0.8579323009975414,
+          "observed_threat_fraction": 0.9029680365296804
+        },
+        {
+          "lower": 0.9,
+          "count": 5339,
+          "mean_probability": 0.9743337646218652,
+          "observed_threat_fraction": 0.992133358306799
+        }
+      ],
+      "common_holdout": {
+        "rows": 3842,
+        "caveat": "URL legacy row membership reconstructed; current domain groups excluded if any retained row was seen. SMS exact/template and current near-group exclusions, not exhaustive semantic matching.",
+        "before": {
+          "rows": 3842,
+          "positives": 1204,
+          "accuracy": 0.9981780322748568,
+          "precision": 1.0,
+          "recall": 0.9941860465116279,
+          "f1": 0.9970845481049563,
+          "false_positive_rate": 0.0,
+          "confusion_matrix": [
+            [
+              2638,
+              0
+            ],
+            [
+              7,
+              1197
+            ]
+          ],
+          "brier": 0.001604472747448479,
+          "log_loss": 0.010471121513726502,
+          "roc_auc": 0.999845095574771,
+          "pr_auc": 0.9997268669451332
+        },
+        "after": {
+          "rows": 3842,
+          "positives": 1204,
+          "accuracy": 0.8604893284747527,
+          "precision": 0.8205374280230326,
+          "recall": 0.7101328903654485,
+          "f1": 0.761353517364203,
+          "false_positive_rate": 0.07088703563305535,
+          "confusion_matrix": [
+            [
+              2451,
+              187
+            ],
+            [
+              349,
+              855
+            ]
+          ],
+          "brier": 0.10503414450144513,
+          "log_loss": 0.33767374444962855,
+          "roc_auc": 0.8947200889629967,
+          "pr_auc": 0.8641543029977147
+        }
+      },
+      "audit_regression": {
+        "rows": 18,
+        "before_correct": 10,
+        "after_correct": 15,
+        "status": "developer diagnostics only; never independent test evidence"
+      }
+    },
+    "sms": {
+      "test": {
+        "rows": 7545,
+        "positives": 2851,
+        "accuracy": 0.9760106030483764,
+        "precision": 0.973404255319149,
+        "recall": 0.9628200631357419,
+        "f1": 0.9680832304708165,
+        "false_positive_rate": 0.015977844056242013,
+        "confusion_matrix": [
+          [
+            4619,
+            75
+          ],
+          [
+            106,
+            2745
+          ]
+        ],
+        "brier": 0.01887503768163448,
+        "log_loss": 0.07069664025205975,
+        "roc_auc": 0.9963193981675004,
+        "pr_auc": 0.9941941954125203
+      },
+      "test_uncalibrated": {
+        "rows": 7545,
+        "positives": 2851,
+        "accuracy": 0.9761431411530815,
+        "precision": 0.9720749381406858,
+        "recall": 0.9645738337425465,
+        "f1": 0.9683098591549296,
+        "false_positive_rate": 0.016829995739241585,
+        "confusion_matrix": [
+          [
+            4615,
+            79
+          ],
+          [
+            101,
+            2750
+          ]
+        ],
+        "brier": 0.019016648944533306,
+        "log_loss": 0.0728065640911342,
+        "roc_auc": 0.9963193981675004,
+        "pr_auc": 0.9941941954125203
+      },
+      "by_language": {
+        "English": {
+          "rows": 6974,
+          "positives": 2747,
+          "accuracy": 0.9746200172067679,
+          "precision": 0.9724264705882353,
+          "recall": 0.9628685839097197,
+          "f1": 0.9676239253704042,
+          "false_positive_rate": 0.017743080198722498,
+          "confusion_matrix": [
+            [
+              4152,
+              75
+            ],
+            [
+              102,
+              2645
+            ]
+          ],
+          "brier": 0.01986888798245451,
+          "log_loss": 0.07396470778126711,
+          "roc_auc": 0.9961179234261968,
+          "pr_auc": 0.9941950625061978
+        },
+        "Hindi": {
+          "rows": 456,
+          "positives": 6,
+          "accuracy": 0.9912280701754386,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "false_positive_rate": 0.0,
+          "confusion_matrix": [
+            [
+              450,
+              0
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "brier": 0.008016155844042184,
+          "log_loss": 0.03419433081367303,
+          "roc_auc": 0.9533333333333334,
+          "pr_auc": 0.6292941024648342
+        },
+        "Hinglish": {
+          "rows": 115,
+          "positives": 98,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "false_positive_rate": 0.0,
+          "confusion_matrix": [
+            [
+              17,
+              0
+            ],
+            [
+              0,
+              98
+            ]
+          ],
+          "brier": 0.0016623256818361304,
+          "log_loss": 0.017249250297383386,
+          "roc_auc": 1.0,
+          "pr_auc": 1.0
+        }
+      },
+      "by_source": {
+        "Smishing_Dataset": {
+          "rows": 6790,
+          "positives": 2695,
+          "accuracy": 0.974521354933726,
+          "precision": 0.9726386806596702,
+          "recall": 0.9628942486085343,
+          "f1": 0.967741935483871,
+          "false_positive_rate": 0.017826617826617826,
+          "confusion_matrix": [
+            [
+              4022,
+              73
+            ],
+            [
+              100,
+              2595
+            ]
+          ],
+          "brier": 0.01992780560147612,
+          "log_loss": 0.07413601148747018,
+          "roc_auc": 0.9961524190095619,
+          "pr_auc": 0.9942716725653407
+        },
+        "Kaggle_Hindi_Merged": {
+          "rows": 456,
+          "positives": 6,
+          "accuracy": 0.9912280701754386,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "false_positive_rate": 0.0,
+          "confusion_matrix": [
+            [
+              450,
+              0
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "brier": 0.008016155844042184,
+          "log_loss": 0.03419433081367303,
+          "roc_auc": 0.9533333333333334,
+          "pr_auc": 0.6292941024648342
+        },
+        "Indian_Telecom_SMS": {
+          "rows": 213,
+          "positives": 86,
+          "accuracy": 0.9812206572769953,
+          "precision": 0.9767441860465116,
+          "recall": 0.9767441860465116,
+          "f1": 0.9767441860465116,
+          "false_positive_rate": 0.015748031496062992,
+          "confusion_matrix": [
+            [
+              125,
+              2
+            ],
+            [
+              2,
+              84
+            ]
+          ],
+          "brier": 0.01597861892570202,
+          "log_loss": 0.06144285604108761,
+          "roc_auc": 0.9980772752243179,
+          "pr_auc": 0.997421026162011
+        },
+        "ysangam/Indian_Cyber_Scam_Hinglish": {
+          "rows": 86,
+          "positives": 64,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "false_positive_rate": 0.0,
+          "confusion_matrix": [
+            [
+              22,
+              0
+            ],
+            [
+              0,
+              64
+            ]
+          ],
+          "brier": 0.0005063532308316899,
+          "log_loss": 0.015612668768393243,
+          "roc_auc": 1.0,
+          "pr_auc": 1.0
+        }
+      },
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "count": 4453,
+          "mean_probability": 0.007935406983290696,
+          "observed_threat_fraction": 0.008758140579384684
+        },
+        {
+          "lower": 0.1,
+          "count": 138,
+          "mean_probability": 0.14166316333749684,
+          "observed_threat_fraction": 0.15217391304347827
+        },
+        {
+          "lower": 0.2,
+          "count": 64,
+          "mean_probability": 0.24680648600300256,
+          "observed_threat_fraction": 0.1875
+        },
+        {
+          "lower": 0.3,
+          "count": 39,
+          "mean_probability": 0.34993461338212317,
+          "observed_threat_fraction": 0.4358974358974359
+        },
+        {
+          "lower": 0.4,
+          "count": 31,
+          "mean_probability": 0.4454359542699362,
+          "observed_threat_fraction": 0.5483870967741935
+        },
+        {
+          "lower": 0.5,
+          "count": 31,
+          "mean_probability": 0.5402809786216791,
+          "observed_threat_fraction": 0.5806451612903226
+        },
+        {
+          "lower": 0.6,
+          "count": 39,
+          "mean_probability": 0.6575219711434851,
+          "observed_threat_fraction": 0.6153846153846154
+        },
+        {
+          "lower": 0.7,
+          "count": 32,
+          "mean_probability": 0.7551365523638636,
+          "observed_threat_fraction": 0.78125
+        },
+        {
+          "lower": 0.8,
+          "count": 91,
+          "mean_probability": 0.8625135127471281,
+          "observed_threat_fraction": 0.8901098901098901
+        },
+        {
+          "lower": 0.9,
+          "count": 2627,
+          "mean_probability": 0.9919685907258396,
+          "observed_threat_fraction": 0.9885801294251998
+        }
+      ],
+      "common_holdout": {
+        "rows": 703,
+        "caveat": "URL legacy row membership reconstructed; current domain groups excluded if any retained row was seen. SMS exact/template and current near-group exclusions, not exhaustive semantic matching.",
+        "before": {
+          "rows": 703,
+          "positives": 244,
+          "accuracy": 0.9715504978662873,
+          "precision": 0.9628099173553719,
+          "recall": 0.9549180327868853,
+          "f1": 0.9588477366255144,
+          "false_positive_rate": 0.0196078431372549,
+          "confusion_matrix": [
+            [
+              450,
+              9
+            ],
+            [
+              11,
+              233
+            ]
+          ],
+          "brier": 0.021754263562687927,
+          "log_loss": 0.07838990991023141,
+          "roc_auc": 0.9954730526090217,
+          "pr_auc": 0.9929850419378232
+        },
+        "after": {
+          "rows": 703,
+          "positives": 244,
+          "accuracy": 0.9743954480796586,
+          "precision": 0.9708333333333333,
+          "recall": 0.9549180327868853,
+          "f1": 0.9628099173553719,
+          "false_positive_rate": 0.015250544662309368,
+          "confusion_matrix": [
+            [
+              452,
+              7
+            ],
+            [
+              11,
+              233
+            ]
+          ],
+          "brier": 0.02104289196312596,
+          "log_loss": 0.07652530829845912,
+          "roc_auc": 0.9953926925961643,
+          "pr_auc": 0.9928438116656976
+        }
+      },
+      "audit_regression": {
+        "rows": 24,
+        "before_correct": 15,
+        "after_correct": 16,
+        "status": "developer diagnostics only; never independent test evidence"
+      }
+    }
+  }
+}

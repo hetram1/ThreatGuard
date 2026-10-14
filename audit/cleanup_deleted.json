@@ -1,0 +1,324 @@
+[
+  {
+    "path": "ml/url_detection/train_model.py",
+    "logical_bytes": 6128,
+    "sha256": "fc86575ddfacd1cd3880e4df3e81080ad985986b6c0682c6e749db5e1db13a92",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/train_model_v2.py",
+    "logical_bytes": 3317,
+    "sha256": "6b232e88edb2113fe3c117b12c88b1fead47c37e54705011865c047d727dd5e4",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/train_model_v3.py",
+    "logical_bytes": 4842,
+    "sha256": "8cbd260824cb77198e7deab3739e2ea497c6d9d5002b515113cbad3b84bb2718",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/train_model_v4.py",
+    "logical_bytes": 8888,
+    "sha256": "8a2304098c489c5fd197dff4da92929140368117193795e018007e72cc38bf6d",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/train_char_model.py",
+    "logical_bytes": 9572,
+    "sha256": "b062bf90ad3b3f34efb47a02b02826e03709bbb4aebe136e65d3210b13378b75",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/build_features.py",
+    "logical_bytes": 2327,
+    "sha256": "ed67adfd745dbe1527ae82d2e3068b521ec01860c401c7639dd6e405ee5322b7",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/build_features_v2.py",
+    "logical_bytes": 1067,
+    "sha256": "ff84067d85ed51494a342765de477ef2729b0dabafe36121c93b8396deae1460",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/test_model_v2.py",
+    "logical_bytes": 1470,
+    "sha256": "6a6ba96ef2eb8e3a87b31d3c4cf869df4ac6c52c29f02756713b2298cc5f1c8b",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/test_model_v3.py",
+    "logical_bytes": 3788,
+    "sha256": "f1ee0f9e92ee44e2715e3300fbf861d0b88d45bbd341406b4c5df9c098f6d8b9",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/evaluate_v4.py",
+    "logical_bytes": 13851,
+    "sha256": "493a90941776967c9dcc1abc8f667d615dee109642e025b08a0c9d79440ab6c5",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/audit_model.py",
+    "logical_bytes": 7473,
+    "sha256": "21cd1634f813da78a321886d5c180744656088bb9527491c0f5f0fa4c5852c7a",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/benchmark_char_model.py",
+    "logical_bytes": 5095,
+    "sha256": "99e2f8d945a2fb12c23e3ac1449618ad2043f8e75f5385161d1c31d9100782ad",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/domain_audit.py",
+    "logical_bytes": 11491,
+    "sha256": "b85a62c01ccfc9d4f0abb1015c71a7ef81c66a7b5225bce2dba13eaf6f6ff573",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/investigate_features.py",
+    "logical_bytes": 5591,
+    "sha256": "d6ada0cf07276d0529e83728c8891ffb87027001391e382d20163e81c8a02635",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/model_selection.py",
+    "logical_bytes": 8942,
+    "sha256": "9bd02538b3ff7acbba7e710a516017ffd1c52336ec1bc59846a55ae9b7ab3728",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/url_features.py",
+    "logical_bytes": 5174,
+    "sha256": "fc47e759be508c0ce040335f4578937f1bcdd07e0472a31e2d066e9a2921ddd6",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/url_detection/url_features_v3.py",
+    "logical_bytes": 7843,
+    "sha256": "3b83ba090ce6c97dc86adc29b10308e18ec600f66a93be5c49d8bd7a33b3ada8",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/sms_detection/train_model_v2.py",
+    "logical_bytes": 13608,
+    "sha256": "75edabd7d80e715e6e64568574b798adda57f8204d9cd553470d07f7ec2641a5",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/sms_detection/sms_features.py",
+    "logical_bytes": 7741,
+    "sha256": "9f36c7ba987a1b516424d3a40ce5dbd1488fb249bc4c931b93051113292f5629",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/sms_detection/audit_model.py",
+    "logical_bytes": 11177,
+    "sha256": "27293709a339a213546e52c171f0a42e34eb48c19f36fcb8a4f9dd1e978b853f",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "ml/sms_detection/calibrate_threshold.py",
+    "logical_bytes": 8595,
+    "sha256": "506e60595d40c23e7e27463f3c80470a8ad5c5c49d32c271185e79bc4bad58ab",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/patch_integration.py",
+    "logical_bytes": 2850,
+    "sha256": "18caf7e3b1f334df983e69ce4e044b8a1c632fdebf03ba385129c3f948460bd1",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/patch_requirements.py",
+    "logical_bytes": 447,
+    "sha256": "cee739331db7f51db574cd9031e7e3a63c81c1189cd0705e5928d43fc40a8699",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/patch_tests.py",
+    "logical_bytes": 500,
+    "sha256": "379366d261dc54707159563aa0bca9e2cc56715b547c075cd91cc99b10f701c9",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/refine_regression_tests.py",
+    "logical_bytes": 754,
+    "sha256": "86f43afdc0e768f5e340d9394b12851e58b99f1c3b6ded36887b5c3d3f26a23a",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/update_train_manifest.py",
+    "logical_bytes": 377,
+    "sha256": "7332bfe4f260d7b556d5f9f67f2414484253ce5d617b5e283154fdfa4576da82",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/freeze_release.py",
+    "logical_bytes": 483,
+    "sha256": "d5ec1c942776fe522c801c719e83730842f560820be976b32f46004b35b684d0",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/harden_authority.py",
+    "logical_bytes": 887,
+    "sha256": "d1ca6bc62e8cc046d31e34157247624e3e9635abaa23027d18ed07b90b4d47a7",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/final_wording.py",
+    "logical_bytes": 652,
+    "sha256": "545dcde6e9953b7973533b468b1573f301a794ec33deaa0413f64cab6ec1e641",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/normalize_edited_lines.py",
+    "logical_bytes": 255,
+    "sha256": "b4d5b4408fa15b54271e0bb510b2ef95cfe488dead07ee911ad8f846ffe9acf8",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "data/processed/url_features.csv",
+    "logical_bytes": 38954906,
+    "sha256": "018857606b38fba09ab0a6dca3043b34d0fffe8ba45301b2c2d947505f79958b",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "data/processed/url_features_v2.csv",
+    "logical_bytes": 38487571,
+    "sha256": "b90ebb13b75407fed00d690a765414e3ef93f020b6c4fd3bbbfb5c65502e70b0",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/url_holdout_predictions.csv",
+    "logical_bytes": 2757951,
+    "sha256": "fa1087fea3a7528fd46ccc60effb68a517a79e67845a2b5080331e0028fe1f6e",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "audit/sms_holdout_predictions.csv",
+    "logical_bytes": 1695179,
+    "sha256": "b3055f3c074de0f09a9ad0f75baf5358ab72e3646063fb2cdfa4dfb0a458f505",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "frontend/src/assets/hero.png",
+    "logical_bytes": 13057,
+    "sha256": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "frontend/public/icons.svg",
+    "logical_bytes": 5031,
+    "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "frontend/public/favicon.svg",
+    "logical_bytes": 9522,
+    "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66",
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "data/reliable/v1",
+    "logical_bytes": 117904881,
+    "sha256": null,
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "models/releases/reproducibility-v1",
+    "logical_bytes": 5328807,
+    "sha256": null,
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "frontend/dist",
+    "logical_bytes": 953729,
+    "sha256": null,
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": ".pytest_cache",
+    "logical_bytes": 11942,
+    "sha256": null,
+    "reason": "superseded experiment/duplicate preparation, regenerable output, one-time patch, or confirmed unused asset",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "models/url_char_logreg_v5.joblib",
+    "logical_bytes": 1201275,
+    "sha256": "9c522bee04ebc4b1fe077db1f1b977bbffa370f1c8e2341fa30f9a5102d7fd30",
+    "reason": "replaced byte-identical duplicate with local relative symlink; historical paths and hashes preserved",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "models/url_char_vectorizer_v5.joblib",
+    "logical_bytes": 5132816,
+    "sha256": "a8433d363ced6adb55b1ac19211eb45e84eb27cf62e0aa758df1a32eaecb2845",
+    "reason": "replaced byte-identical duplicate with local relative symlink; historical paths and hashes preserved",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "models/url_char_scaler_v5.joblib",
+    "logical_bytes": 2687,
+    "sha256": "d6dddb8f536bebe2d283390960a12ad5d5459eb28175ac09f3e8b6cb0a4ca463",
+    "reason": "replaced byte-identical duplicate with local relative symlink; historical paths and hashes preserved",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "models/sms_v2_word_vectorizer.joblib",
+    "logical_bytes": 4731684,
+    "sha256": "4e314b9939ce0a7d84cd546220ee208c2560c44eab4c3bc622801f59fe6bdca4",
+    "reason": "replaced byte-identical duplicate with local relative symlink; historical paths and hashes preserved",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  },
+  {
+    "path": "models/sms_v2_char_vectorizer.joblib",
+    "logical_bytes": 4205553,
+    "sha256": "5cb41c4166f00c93d891c462ae75bb5604a9eba049c03fee0deaf79eb3a3bc4e",
+    "reason": "replaced byte-identical duplicate with local relative symlink; historical paths and hashes preserved",
+    "backup": "/tmp/threatguard-cleanup-20261015/workspace-before.tar.gz"
+  }
+]

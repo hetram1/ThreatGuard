@@ -1,0 +1,174 @@
+{
+  "allocated_file_bytes": 4465872896,
+  "logical_file_bytes": 4373389566,
+  "directory_allocated_file_bytes": {
+    ".git": 2012622848,
+    ".venv": 1679155200,
+    "data": 495009792,
+    "frontend": 228220928,
+    "models": 49811456,
+    "ml": 290816,
+    "audit": 229376,
+    "backend": 212992,
+    "tests": 90112,
+    "scripts": 53248,
+    ".ruff_cache": 49152,
+    "docs": 49152,
+    ".pytest_cache": 24576,
+    "README.md": 8192,
+    "requirements-reliable.lock": 4096,
+    "run.sh": 4096,
+    "conftest.py": 4096,
+    "requirements-lock.txt": 4096,
+    ".gitignore": 4096,
+    "pytest.ini": 4096,
+    "requirements-ml.txt": 4096,
+    "docker-compose.yml": 4096,
+    ".gitattributes": 4096,
+    "requirements.txt": 4096,
+    "__pycache__": 4096
+  },
+  "largest_project_files": [
+    {
+      "path": "data/external/zenodo-8041387/not-phishing.csv",
+      "bytes": 107438400
+    },
+    {
+      "path": "data/raw/majestic_million.csv",
+      "bytes": 81059047
+    },
+    {
+      "path": "data/external/zenodo-8041387/phishing.csv",
+      "bytes": 61519197
+    },
+    {
+      "path": "data/reliable/v2/legacy_url_membership.csv",
+      "bytes": 57153597
+    },
+    {
+      "path": "data/raw/phiusiil.csv",
+      "bytes": 56226838
+    },
+    {
+      "path": "data/reliable/v2/url.csv",
+      "bytes": 43816913
+    },
+    {
+      "path": "data/reliable/v2/sms.csv",
+      "bytes": 36854756
+    },
+    {
+      "path": "data/reliable/v2/legacy_sms_membership.csv",
+      "bytes": 16932043
+    },
+    {
+      "path": "data/processed/sms/train.csv",
+      "bytes": 13341075
+    },
+    {
+      "path": "data/processed/benign_deep_path_augmentation.csv",
+      "bytes": 11800109
+    },
+    {
+      "path": "data/processed/benign_url_augmentation.csv",
+      "bytes": 5725063
+    },
+    {
+      "path": "models/url_detector_vectorizer.joblib",
+      "bytes": 5132816
+    },
+    {
+      "path": "models/url_char_vectorizer_v4.joblib",
+      "bytes": 5123088
+    },
+    {
+      "path": "models/releases/reliable-v1/url_test_predictions.csv",
+      "bytes": 4774952
+    },
+    {
+      "path": "models/sms_word_vectorizer.joblib",
+      "bytes": 4731684
+    },
+    {
+      "path": "models/sms_char_vectorizer.joblib",
+      "bytes": 4205553
+    },
+    {
+      "path": "models/url_char_vectorizer.joblib",
+      "bytes": 4087724
+    },
+    {
+      "path": "models/releases/reliable-v1/sms_test_predictions.csv",
+      "bytes": 3728731
+    },
+    {
+      "path": "models/releases/reliable-v1/sms.joblib",
+      "bytes": 3636757
+    },
+    {
+      "path": "models/sms_detector_v2.joblib",
+      "bytes": 1921195
+    },
+    {
+      "path": "models/sms_detector.joblib",
+      "bytes": 1920891
+    },
+    {
+      "path": "models/releases/reliable-v1/url.joblib",
+      "bytes": 1684826
+    },
+    {
+      "path": "data/processed/sms/test.csv",
+      "bytes": 1529073
+    },
+    {
+      "path": "models/url_xgboost.joblib",
+      "bytes": 1521233
+    },
+    {
+      "path": "data/processed/sms/validation.csv",
+      "bytes": 1515498
+    },
+    {
+      "path": "models/releases/reliable-v1/external_url_predictions.csv",
+      "bytes": 1286076
+    },
+    {
+      "path": "models/url_xgboost_v3.joblib",
+      "bytes": 1260932
+    },
+    {
+      "path": "models/url_char_logreg_v4.joblib",
+      "bytes": 1201275
+    },
+    {
+      "path": "models/url_detector.joblib",
+      "bytes": 1201275
+    },
+    {
+      "path": "models/url_xgboost_v2.joblib",
+      "bytes": 1033966
+    },
+    {
+      "path": "models/url_char_logreg.joblib",
+      "bytes": 961259
+    },
+    {
+      "path": "frontend/dist/assets/QRScanner-DeWXPTz1.js",
+      "bytes": 372119
+    },
+    {
+      "path": "frontend/dist/assets/DistributionChart-BM3hcw1P.js",
+      "bytes": 316520
+    },
+    {
+      "path": "frontend/dist/assets/index-B1ErIb3z.js",
+      "bytes": 239254
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 100508
+    }
+  ],
+  "source_lines_excluding_generated": 7762
+}

@@ -49,9 +49,7 @@ class ThreatAnalysisService:
         input_type: str,
         value: str,
     ) -> dict[str, Any]:
-        normalized_type = (
-            input_type.strip().lower()
-        )
+        normalized_type = input_type.strip().lower()
 
         if normalized_type == "url":
             return self.analyze_url(value)
@@ -59,74 +57,4 @@ class ThreatAnalysisService:
         if normalized_type == "sms":
             return self.analyze_sms(value)
 
-        raise ValueError(
-            "Unsupported input type. "
-            "Expected 'url' or 'sms'."
-        )
-
-
-if __name__ == "__main__":
-    service = ThreatAnalysisService()
-
-    print()
-    print("=" * 100)
-    print("THREATGUARD UNIFIED THREAT ANALYSIS SERVICE")
-    print("=" * 100)
-
-    print()
-    print("===== URL ANALYSIS =====")
-
-    url_result = service.analyze_url(
-        "https://secure-account-verification.example.com/login"
-    )
-
-    print(
-        "Input type :",
-        url_result["input_type"],
-    )
-
-    print(
-        "Prediction :",
-        url_result["prediction"],
-    )
-
-    print(
-        "Risk score :",
-        url_result["risk_score"],
-    )
-
-    print(
-        "Risk band  :",
-        url_result["risk_band"],
-    )
-
-    print()
-    print("===== SMS ANALYSIS =====")
-
-    sms_result = service.analyze_sms(
-        "URGENT! Your bank account will be blocked today. "
-        "Verify KYC immediately."
-    )
-
-    print(
-        "Input type :",
-        sms_result["input_type"],
-    )
-
-    print(
-        "Prediction :",
-        sms_result["prediction"],
-    )
-
-    print(
-        "Risk score :",
-        sms_result["risk_score"],
-    )
-
-    print(
-        "Risk band  :",
-        sms_result["risk_band"],
-    )
-
-    print()
-    print("UNIFIED SERVICE TEST: PASS")
+        raise ValueError("Unsupported input type. Expected 'url' or 'sms'.")

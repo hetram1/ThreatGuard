@@ -1,0 +1,172 @@
+{
+  "allocated_file_bytes": 4652339200,
+  "logical_file_bytes": 4559835843,
+  "directory_allocated_file_bytes": {
+    ".git": 2012622848,
+    ".venv": 1645129728,
+    "data": 690380800,
+    "frontend": 228270080,
+    "models": 70430720,
+    "audit": 4620288,
+    "ml": 479232,
+    "backend": 204800,
+    "tests": 90112,
+    "docs": 28672,
+    ".pytest_cache": 24576,
+    "README.md": 8192,
+    "scripts": 8192,
+    "requirements-reliable.lock": 4096,
+    "run.sh": 4096,
+    "conftest.py": 4096,
+    "requirements-lock.txt": 4096,
+    ".gitignore": 4096,
+    "pytest.ini": 4096,
+    "requirements-ml.txt": 4096,
+    "docker-compose.yml": 4096,
+    "requirements.txt": 4096,
+    "__pycache__": 4096
+  },
+  "largest_project_files": [
+    {
+      "path": "data/external/zenodo-8041387/not-phishing.csv",
+      "bytes": 107438400
+    },
+    {
+      "path": "data/raw/majestic_million.csv",
+      "bytes": 81059047
+    },
+    {
+      "path": "data/external/zenodo-8041387/phishing.csv",
+      "bytes": 61519197
+    },
+    {
+      "path": "data/reliable/v1/legacy_url_membership.csv",
+      "bytes": 57153597
+    },
+    {
+      "path": "data/reliable/v2/legacy_url_membership.csv",
+      "bytes": 57153597
+    },
+    {
+      "path": "data/raw/phiusiil.csv",
+      "bytes": 56226838
+    },
+    {
+      "path": "data/reliable/v1/url.csv",
+      "bytes": 43816913
+    },
+    {
+      "path": "data/reliable/v2/url.csv",
+      "bytes": 43816913
+    },
+    {
+      "path": "data/processed/url_features.csv",
+      "bytes": 38954906
+    },
+    {
+      "path": "data/processed/url_features_v2.csv",
+      "bytes": 38487571
+    },
+    {
+      "path": "data/reliable/v2/sms.csv",
+      "bytes": 36854756
+    },
+    {
+      "path": "data/reliable/v1/legacy_sms_membership.csv",
+      "bytes": 16932043
+    },
+    {
+      "path": "data/reliable/v2/legacy_sms_membership.csv",
+      "bytes": 16932043
+    },
+    {
+      "path": "data/processed/sms/train.csv",
+      "bytes": 13341075
+    },
+    {
+      "path": "data/processed/benign_deep_path_augmentation.csv",
+      "bytes": 11800109
+    },
+    {
+      "path": "data/processed/benign_url_augmentation.csv",
+      "bytes": 5725063
+    },
+    {
+      "path": "models/url_detector_vectorizer.joblib",
+      "bytes": 5132816
+    },
+    {
+      "path": "models/url_char_vectorizer_v5.joblib",
+      "bytes": 5132816
+    },
+    {
+      "path": "models/url_char_vectorizer_v4.joblib",
+      "bytes": 5123088
+    },
+    {
+      "path": "models/releases/reliable-v1/url_test_predictions.csv",
+      "bytes": 4774952
+    },
+    {
+      "path": "models/sms_word_vectorizer.joblib",
+      "bytes": 4731684
+    },
+    {
+      "path": "models/sms_v2_word_vectorizer.joblib",
+      "bytes": 4731684
+    },
+    {
+      "path": "models/sms_v2_char_vectorizer.joblib",
+      "bytes": 4205553
+    },
+    {
+      "path": "models/sms_char_vectorizer.joblib",
+      "bytes": 4205553
+    },
+    {
+      "path": "models/url_char_vectorizer.joblib",
+      "bytes": 4087724
+    },
+    {
+      "path": "models/releases/reliable-v1/sms_test_predictions.csv",
+      "bytes": 3728731
+    },
+    {
+      "path": "models/releases/reliable-v1/sms.joblib",
+      "bytes": 3636757
+    },
+    {
+      "path": "models/releases/reproducibility-v1/sms.joblib",
+      "bytes": 3636757
+    },
+    {
+      "path": "audit/url_holdout_predictions.csv",
+      "bytes": 2757951
+    },
+    {
+      "path": "models/sms_detector_v2.joblib",
+      "bytes": 1921195
+    },
+    {
+      "path": "models/sms_detector.joblib",
+      "bytes": 1920891
+    },
+    {
+      "path": "audit/sms_holdout_predictions.csv",
+      "bytes": 1695179
+    },
+    {
+      "path": "models/releases/reliable-v1/url.joblib",
+      "bytes": 1684826
+    },
+    {
+      "path": "models/releases/reproducibility-v1/url.joblib",
+      "bytes": 1684826
+    },
+    {
+      "path": "data/processed/sms/test.csv",
+      "bytes": 1529073
+    }
+  ],
+  "source_lines_excluding_generated": 16300
+}

@@ -1,0 +1,13 @@
+# Source files use portable Linux line endings.
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.css text eol=lf
+*.sh text eol=lf
+# These exact bytes are covered by the frozen release's SHA-256 manifest.
+ml/reliable/model.py -text
+ml/reliable/preprocessing.py -text
+models/releases/reliable-v1/** -text
+*.joblib -text
+*.png -text

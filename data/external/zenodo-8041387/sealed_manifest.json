@@ -1,0 +1,25 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.8041387",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "publication_date": "2023-07-02",
+  "files": [
+    {
+      "file": "not-phishing.csv",
+      "sha256": "af07ef049a1dfcce7e76dfb891ece2a166366c4c3fd1a92ac3ab86a4100e195b",
+      "source_checksum": "md5:f5d218eb67f5d7bd0571e8089a8fc392",
+      "bytes": 107438400
+    },
+    {
+      "file": "phishing.csv",
+      "sha256": "3869a4e0ad391a27e6489285becafca0310ef68d207469ef8b1e4ed462cd23dc",
+      "source_checksum": "md5:513962464c413fc30b2030547a12868a",
+      "bytes": 61519197
+    }
+  ],
+  "role": "external evaluation only; no training or selection",
+  "labels": "phishing.csv=1; not-phishing.csv=0, as published by authors",
+  "content_inspected": false,
+  "independence": "Not yet established; require normalized URL and registrable-domain overlap exclusion against ALL development datasets before evaluation."
+}

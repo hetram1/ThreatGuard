@@ -1,0 +1,69 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.8041387",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "publication_date": "2023-07-02",
+  "scope": "Published historical website labels; no current reputation assertion. New source, normalized URL and registrable-domain disjoint from all available URL development data including audit probes. This cannot prove absence of all upstream/source dependencies.",
+  "release_manifest_sha256": "2342c5cb702c6ef28938a6081f76b068a1747e9b79b76266b0a8e9b627f1a9d7",
+  "sealed_manifest_sha256": "d544ffadf2d8a8ead582baa43438c1678bd253eec12d8d1efdbb80a7d0366645",
+  "raw_rows": 10395,
+  "invalid_urls": 4,
+  "conflicting_urls": 0,
+  "unique_valid_rows": 10387,
+  "exact_development_overlaps": 1335,
+  "domain_overlap_rows_removed": 3660,
+  "retained_domains": 6341,
+  "retained_rows": 6727,
+  "remaining_domain_overlap": 0,
+  "remaining_exact_overlap": 0,
+  "scan_date_min": "2018-12-08T00:22:51.482Z",
+  "scan_date_max": "2023-05-08T08:06:20.214Z",
+  "before": {
+    "rows": 6727,
+    "positives": 2457,
+    "accuracy": 0.4248550616916902,
+    "precision": 0.38775834658187597,
+    "recall": 0.9926739926739927,
+    "f1": 0.5576769178003887,
+    "false_positive_rate": 0.9018735362997659,
+    "confusion_matrix": [
+      [
+        419,
+        3851
+      ],
+      [
+        18,
+        2439
+      ]
+    ],
+    "brier": 0.516086037045216,
+    "log_loss": 6.896031312060341,
+    "roc_auc": 0.653672487630333,
+    "pr_auc": 0.44125358070159865
+  },
+  "after": {
+    "rows": 6727,
+    "positives": 2457,
+    "accuracy": 0.650810167979783,
+    "precision": 0.5173521850899743,
+    "recall": 0.6552706552706553,
+    "f1": 0.5782007541748968,
+    "false_positive_rate": 0.3517564402810304,
+    "confusion_matrix": [
+      [
+        2768,
+        1502
+      ],
+      [
+        847,
+        1610
+      ]
+    ],
+    "brier": 0.24386597915225247,
+    "log_loss": 0.7579585388270076,
+    "roc_auc": 0.7195492684954043,
+    "pr_auc": 0.653698629557167
+  },
+  "sms_external_status": "No verified independent SMS corpus acquired; Mendeley source may overlap existing Smishing_Dataset and was not assumed independent."
+}

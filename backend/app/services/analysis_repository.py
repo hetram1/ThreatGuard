@@ -23,7 +23,6 @@ class AnalysisRepository:
         result: dict[str, Any],
         input_value: str,
     ) -> Analysis:
-
         model_info = result.get(
             "model",
             {},
@@ -63,34 +62,19 @@ class AnalysisRepository:
         db: Session,
         limit: int = 50,
     ) -> list[Analysis]:
-
         limit = max(
             1,
             min(limit, 100),
         )
 
-        statement = (
-            select(Analysis)
-            .order_by(
-                desc(
-                    Analysis.created_at
-                )
-            )
-            .limit(limit)
-        )
+        statement = select(Analysis).order_by(desc(Analysis.created_at)).limit(limit)
 
-        return list(
-            db.scalars(statement).all()
-        )
+        return list(db.scalars(statement).all())
 
     @staticmethod
     def count(
         db: Session,
     ) -> int:
-        statement = select(
-            func.count(Analysis.id)
-        )
+        statement = select(func.count(Analysis.id))
 
-        return int(
-            db.scalar(statement) or 0
-        )
+        return int(db.scalar(statement) or 0)

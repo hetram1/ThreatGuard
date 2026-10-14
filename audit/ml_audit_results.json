@@ -1,0 +1,327 @@
+{
+  "url_claimed_unseen_overlap": {
+    "claimed_test_rows": 47005,
+    "exact_training_urls": 37548,
+    "training_host_rows": 38452
+  },
+  "url_artifact_matches_v5": {
+    "model": true,
+    "vectorizer": true,
+    "scaler": true
+  },
+  "url_actual_uci_holdout": {
+    "n": 47219,
+    "accuracy": 0.996547999745865,
+    "precision": 0.9998997242416646,
+    "recall": 0.991991643454039,
+    "f1": 0.9959299857674349,
+    "confusion_matrix": [
+      [
+        27113,
+        2
+      ],
+      [
+        161,
+        19943
+      ]
+    ]
+  },
+  "url_actual_unseen_hostname": {
+    "n": 42596,
+    "accuracy": 0.997863649168936,
+    "precision": 0.9998746474459417,
+    "recall": 0.9944520633337489,
+    "f1": 0.9971559833734412,
+    "confusion_matrix": [
+      [
+        26552,
+        2
+      ],
+      [
+        89,
+        15953
+      ]
+    ]
+  },
+  "sms_test": {
+    "n": 8201,
+    "accuracy": 0.9782953298378246,
+    "precision": 0.9688844753392917,
+    "recall": 0.972102291597476,
+    "f1": 0.9704907161803713,
+    "confusion_matrix": [
+      [
+        5096,
+        94
+      ],
+      [
+        84,
+        2927
+      ]
+    ]
+  },
+  "sms_overlap": {
+    "test_in_train": 13,
+    "test_in_validation": 2
+  },
+  "sms_nonoverlapping_test": {
+    "n": 8186,
+    "accuracy": 0.9782555582702175,
+    "precision": 0.9687292082501663,
+    "recall": 0.9719626168224299,
+    "f1": 0.9703432189270244,
+    "confusion_matrix": [
+      [
+        5096,
+        94
+      ],
+      [
+        84,
+        2912
+      ]
+    ]
+  },
+  "sms_languages": {
+    "English": {
+      "n": 7633,
+      "accuracy": 0.9773352548146207,
+      "precision": 0.9681179293794995,
+      "recall": 0.9724517906336089,
+      "f1": 0.9702800206150146,
+      "confusion_matrix": [
+        [
+          4636,
+          93
+        ],
+        [
+          80,
+          2824
+        ]
+      ]
+    },
+    "Hinglish": {
+      "n": 108,
+      "accuracy": 0.9907407407407407,
+      "precision": 0.9896907216494846,
+      "recall": 1.0,
+      "f1": 0.9948186528497409,
+      "confusion_matrix": [
+        [
+          11,
+          1
+        ],
+        [
+          0,
+          96
+        ]
+      ]
+    },
+    "Hindi": {
+      "n": 460,
+      "accuracy": 0.991304347826087,
+      "precision": 1.0,
+      "recall": 0.6363636363636364,
+      "f1": 0.7777777777777778,
+      "confusion_matrix": [
+        [
+          449,
+          0
+        ],
+        [
+          4,
+          7
+        ]
+      ]
+    }
+  },
+  "fresh_probes": {
+    "sms": {
+      "n": 24,
+      "correct": 15,
+      "seen": 0
+    },
+    "url": {
+      "n": 18,
+      "correct": 10,
+      "seen": 0
+    }
+  },
+  "fresh_failures": [
+    {
+      "kind": "sms",
+      "value": "Your verification code is 731946. Do not share this code with anyone, including bank staff.",
+      "expected": 0,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "scam",
+      "risk_score": 80.07,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "Your account statement for September is available in the banking app. No action is required.",
+      "expected": 0,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "scam",
+      "risk_score": 86.39,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "Please pay the electricity bill using the official app before Friday to avoid a late fee.",
+      "expected": 0,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "scam",
+      "risk_score": 94.28,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "The security team will never ask for your password or OTP. Report suspicious calls.",
+      "expected": 0,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "scam",
+      "risk_score": 56.47,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "Your parcel will arrive tomorrow. Track it in the app you used to place the order.",
+      "expected": 0,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "scam",
+      "risk_score": 76.14,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "You have earned cashback on your purchase. It has already been credited to your wallet.",
+      "expected": 0,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "scam",
+      "risk_score": 65.43,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "Hello mum, my phone broke. This is my new number. Please urgently transfer 48000 rupees to my friend; do not call me.",
+      "expected": 1,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "legitimate",
+      "risk_score": 34.22,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "आपका बैंक खाता बंद हो जाएगा। इसे चालू रखने के लिए अपना ओटीपी और पिन इस नंबर पर भेजें।",
+      "expected": 1,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "legitimate",
+      "risk_score": 4.3,
+      "correct": false
+    },
+    {
+      "kind": "sms",
+      "value": "आपने 25 लाख रुपये जीते हैं। इनाम पाने के लिए पहले 2500 रुपये की फीस भेजें।",
+      "expected": 1,
+      "scenario": "author_written",
+      "seen_in_available_corpus": false,
+      "prediction": "legitimate",
+      "risk_score": 48.88,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://docs.python.org/3/library/urllib.parse.html",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 100.0,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://github.com/scikit-learn/scikit-learn/issues/31427",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 100.0,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://en.wikipedia.org/wiki/Logistic_regression",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 97.92,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://www.rbi.org.in/Scripts/FAQView.aspx?Id=120",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 100.0,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://accounts.google.com/",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 99.78,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://www.microsoft.com/en-us/security/business",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 83.19,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://pypi.org/project/scikit-learn/",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 99.99,
+      "correct": false
+    },
+    {
+      "kind": "url",
+      "value": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401",
+      "expected": 0,
+      "scenario": "benign_service_url_not_live_verified",
+      "seen_in_available_corpus": false,
+      "prediction": "phishing",
+      "risk_score": 99.98,
+      "correct": false
+    }
+  ],
+  "invalid_url_probes": {
+    "not a url": "legitimate",
+    "javascript:alert(1)": "legitimate",
+    "https://": "legitimate",
+    "hello world": "legitimate"
+  }
+}

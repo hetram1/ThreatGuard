@@ -1,0 +1,7 @@
+{
+  "independent_repeat_artifact_hashes_match": {
+    "url": true,
+    "sms": true
+  },
+  "method": "Repeated train/selection/calibration with unchanged prepared data, fixed candidate grid and seeds; no external metrics used."
+}

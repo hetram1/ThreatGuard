@@ -1,0 +1,43 @@
+kind,value,expected,scenario,seen_in_available_corpus,prediction,risk_score,correct
+sms,"Your verification code is 731946. Do not share this code with anyone, including bank staff.",0,author_written,False,scam,80.07,False
+sms,Your account statement for September is available in the banking app. No action is required.,0,author_written,False,scam,86.39,False
+sms,Please pay the electricity bill using the official app before Friday to avoid a late fee.,0,author_written,False,scam,94.28,False
+sms,The security team will never ask for your password or OTP. Report suspicious calls.,0,author_written,False,scam,56.47,False
+sms,I paid for lunch yesterday. Could you send me your share when you have time?,0,author_written,False,legitimate,1.55,True
+sms,Your parcel will arrive tomorrow. Track it in the app you used to place the order.,0,author_written,False,scam,76.14,False
+sms,You have earned cashback on your purchase. It has already been credited to your wallet.,0,author_written,False,scam,65.43,False
+sms,"आज शाम छह बजे घर आ जाना, हम साथ में खाना खाएंगे।",0,author_written,False,legitimate,0.95,True
+sms,आपका ओटीपी 731946 है। इसे किसी के साथ साझा न करें।,0,author_written,False,legitimate,2.01,True
+sms,"Kal library mein milte hain, project ki report complete karni hai.",0,author_written,False,legitimate,28.54,True
+sms,"Your password was changed successfully. If this was you, no further action is needed.",0,author_written,False,legitimate,5.13,True
+sms,The university scholarship application is free. Apply through the student portal.,0,author_written,False,legitimate,32.99,True
+sms,Your bank access expires in 30 minutes. Send your OTP and card PIN to this number to keep it active.,1,author_written,False,scam,89.55,True
+sms,You were selected for a guaranteed remote job. Transfer Rs 1800 registration fee to my personal UPI before your interview.,1,author_written,False,scam,97.04,True
+sms,"Hello mum, my phone broke. This is my new number. Please urgently transfer 48000 rupees to my friend; do not call me.",1,author_written,False,legitimate,34.22,False
+sms,Your parcel is held at customs. Pay Rs 17 at https://parcel-release.example/fee within one hour to prevent return.,1,author_written,False,scam,92.34,True
+sms,I can double your savings in two days with guaranteed crypto returns. Send your deposit to my wallet now.,1,author_written,False,scam,81.75,True
+sms,Police notice: you are under digital arrest. Transfer your savings to our safe account and do not tell anyone.,1,author_written,False,scam,84.33,True
+sms,Your wallet requires synchronization. Reply with all twelve words of your recovery phrase.,1,author_written,False,scam,86.61,True
+sms,We accidentally paid you too much for the item. Refund the extra using gift cards before the payment clears.,1,author_written,False,scam,50.25,True
+sms,आपका बैंक खाता बंद हो जाएगा। इसे चालू रखने के लिए अपना ओटीपी और पिन इस नंबर पर भेजें।,1,author_written,False,legitimate,4.3,False
+sms,आपने 25 लाख रुपये जीते हैं। इनाम पाने के लिए पहले 2500 रुपये की फीस भेजें।,1,author_written,False,legitimate,48.88,False
+sms,Aapka account band ho jayega. OTP aur ATM PIN abhi WhatsApp par bhejo.,1,author_written,False,scam,66.57,True
+sms,Part time review job: earn 9000 daily. First deposit 1200 to unlock your tasks and withdraw salary.,1,author_written,False,scam,87.26,True
+url,https://docs.python.org/3/library/urllib.parse.html,0,benign_service_url_not_live_verified,False,phishing,100.0,False
+url,https://github.com/scikit-learn/scikit-learn/issues/31427,0,benign_service_url_not_live_verified,False,phishing,100.0,False
+url,https://en.wikipedia.org/wiki/Logistic_regression,0,benign_service_url_not_live_verified,False,phishing,97.92,False
+url,https://www.rbi.org.in/Scripts/FAQView.aspx?Id=120,0,benign_service_url_not_live_verified,False,phishing,100.0,False
+url,https://accounts.google.com/,0,benign_service_url_not_live_verified,False,phishing,99.78,False
+url,https://www.microsoft.com/en-us/security/business,0,benign_service_url_not_live_verified,False,phishing,83.19,False
+url,https://pypi.org/project/scikit-learn/,0,benign_service_url_not_live_verified,False,phishing,99.99,False
+url,https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401,0,benign_service_url_not_live_verified,False,phishing,99.98,False
+url,https://paypal.com.login-confirmation.example/verify,1,synthetic_phishing_structure_reserved_domain,False,phishing,100.0,True
+url,https://sbi-kyc-renewal.example/login,1,synthetic_phishing_structure_reserved_domain,False,phishing,87.99,True
+url,https://account-restore.example/otp,1,synthetic_phishing_structure_reserved_domain,False,phishing,70.56,True
+url,https://microsoft.com@credential-check.example/signin,1,synthetic_phishing_structure_reserved_domain,False,phishing,100.0,True
+url,https://wallet-recovery.example/seed-phrase,1,synthetic_phishing_structure_reserved_domain,False,phishing,91.58,True
+url,http://paypal.com.login-confirmation.example/verify,1,synthetic_phishing_structure_reserved_domain,False,phishing,100.0,True
+url,http://sbi-kyc-renewal.example/login,1,synthetic_phishing_structure_reserved_domain,False,phishing,100.0,True
+url,http://account-restore.example/otp,1,synthetic_phishing_structure_reserved_domain,False,phishing,99.99,True
+url,http://microsoft.com@credential-check.example/signin,1,synthetic_phishing_structure_reserved_domain,False,phishing,100.0,True
+url,http://wallet-recovery.example/seed-phrase,1,synthetic_phishing_structure_reserved_domain,False,phishing,100.0,True

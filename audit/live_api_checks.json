@@ -1,0 +1,85 @@
+[
+  {
+    "kind": "url",
+    "input": "https://github.com",
+    "status": 200,
+    "live": {
+      "input_type": "url",
+      "prediction": "legitimate",
+      "risk_score": 2.18,
+      "risk_band": "LOW",
+      "confidence": 0.978212,
+      "threshold": 0.5,
+      "model": {
+        "name": "ThreatGuard URL Detector",
+        "version": "v5",
+        "type": "Character TF-IDF + engineered URL features + Logistic Regression"
+      },
+      "reasons": []
+    },
+    "equals_direct": true
+  },
+  {
+    "kind": "url",
+    "input": "https://github.com/",
+    "status": 200,
+    "live": {
+      "input_type": "url",
+      "prediction": "phishing",
+      "risk_score": 97.59,
+      "risk_band": "CRITICAL",
+      "confidence": 0.975914,
+      "threshold": 0.5,
+      "model": {
+        "name": "ThreatGuard URL Detector",
+        "version": "v5",
+        "type": "Character TF-IDF + engineered URL features + Logistic Regression"
+      },
+      "reasons": []
+    },
+    "equals_direct": true
+  },
+  {
+    "kind": "url",
+    "input": "not a url",
+    "status": 200,
+    "live": {
+      "input_type": "url",
+      "prediction": "legitimate",
+      "risk_score": 0.01,
+      "risk_band": "LOW",
+      "confidence": 0.999937,
+      "threshold": 0.5,
+      "model": {
+        "name": "ThreatGuard URL Detector",
+        "version": "v5",
+        "type": "Character TF-IDF + engineered URL features + Logistic Regression"
+      },
+      "reasons": []
+    },
+    "equals_direct": true
+  },
+  {
+    "kind": "sms",
+    "input": "Your bank access expires in 30 minutes. Send your OTP and card PIN to this number to keep it active.",
+    "status": 200,
+    "live": {
+      "input_type": "sms",
+      "prediction": "scam",
+      "risk_score": 89.55,
+      "risk_band": "CRITICAL",
+      "confidence": 0.895489,
+      "threshold": 0.5,
+      "model": {
+        "name": "ThreatGuard SMS Detector",
+        "version": "v1",
+        "type": "Word + Character TF-IDF + Logistic Regression"
+      },
+      "reasons": [
+        "Message contains security or account-related language.",
+        "Message uses urgency or time-pressure language."
+      ]
+    },
+    "equals_direct": true
+  }
+]

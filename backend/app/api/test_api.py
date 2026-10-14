@@ -1,40 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from backend.app.database.database import (
-    SessionLocal,
-)
 from backend.app.main import app
-from backend.app.models.analysis import Analysis
-
-
-@pytest.fixture(autouse=True)
-def clean_database():
-    """
-    Keep API tests isolated.
-
-    The analysis endpoints now persist successful
-    analyses, so each test must start and finish
-    with a clean database.
-    """
-
-    db = SessionLocal()
-
-    try:
-        db.query(Analysis).delete()
-        db.commit()
-    finally:
-        db.close()
-
-    yield
-
-    db = SessionLocal()
-
-    try:
-        db.query(Analysis).delete()
-        db.commit()
-    finally:
-        db.close()
 
 
 @pytest.fixture
@@ -54,9 +21,7 @@ def test_root(client):
 
 
 def test_health(client):
-    response = client.get(
-        "/api/v1/health"
-    )
+    response = client.get("/api/v1/health")
 
     assert response.status_code == 200
 
@@ -66,9 +31,7 @@ def test_health(client):
 
 
 def test_model_info(client):
-    response = client.get(
-        "/api/v1/model-info"
-    )
+    response = client.get("/api/v1/model-info")
 
     assert response.status_code == 200
 
@@ -81,12 +44,7 @@ def test_model_info(client):
 def test_url_analysis(client):
     response = client.post(
         "/api/v1/analyze/url",
-        json={
-            "url": (
-                "https://secure-account-verification."
-                "example.com/login"
-            )
-        },
+        json={"url": ("https://secure-account-verification.example.com/login")},
     )
 
     assert response.status_code == 200
@@ -145,9 +103,7 @@ def test_unified_sms_analysis(client):
         "/api/v1/analyze",
         json={
             "input_type": "sms",
-            "value": (
-                "Hey bro, are you coming to class tomorrow?"
-            ),
+            "value": ("Hey bro, are you coming to class tomorrow?"),
         },
     )
 
@@ -181,9 +137,7 @@ def test_empty_sms_rejected(client):
 
 
 def test_history_empty(client):
-    response = client.get(
-        "/api/v1/history"
-    )
+    response = client.get("/api/v1/history")
 
     assert response.status_code == 200
 
@@ -203,9 +157,7 @@ def test_history_after_analysis(client):
 
     assert response.status_code == 200
 
-    history = client.get(
-        "/api/v1/history"
-    )
+    history = client.get("/api/v1/history")
 
     assert history.status_code == 200
 
@@ -217,9 +169,7 @@ def test_history_after_analysis(client):
     item = data["items"][0]
 
     assert item["input_type"] == "url"
-    assert item["input_value"] == (
-        "https://github.com"
-    )
+    assert item["input_value"] == ("https://github.com")
     assert "prediction" in item
     assert "risk_score" in item
     assert "risk_band" in item
@@ -247,9 +197,7 @@ def test_history_limit(client):
 
         assert response.status_code == 200
 
-    history = client.get(
-        "/api/v1/history?limit=2"
-    )
+    history = client.get("/api/v1/history?limit=2")
 
     assert history.status_code == 200
 
@@ -260,14 +208,10 @@ def test_history_limit(client):
 
 
 def test_history_limit_validation(client):
-    response = client.get(
-        "/api/v1/history?limit=0"
-    )
+    response = client.get("/api/v1/history?limit=0")
 
     assert response.status_code == 422
 
-    response = client.get(
-        "/api/v1/history?limit=101"
-    )
+    response = client.get("/api/v1/history?limit=101")
 
     assert response.status_code == 422

@@ -1,52 +1,55 @@
-# Python
+# Local data, environments and runtime outputs
 __pycache__/
 *.py[cod]
-*.pyo
 .pytest_cache/
 .mypy_cache/
-
-# Virtual environments
+.ruff_cache/
 .venv/
 venv/
 env/
-
-# Environment / secrets
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+.vite/
+.cache/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.pid
 .env
 .env.*
 !.env.example
-
-# Jupyter
+*.local
 .ipynb_checkpoints/
-
-# OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Logs
-*.log
-
-# Large raw datasets
+# Preserve datasets locally; publish their provenance and split metadata.
 data/raw/*
 !data/raw/.gitkeep
+data/processed/**/*.csv
+data/processed/**/*.parquet
+data/reliable/
+data/external/**/*.csv
 
-# Generated processed datasets
-data/processed/*.csv
-data/processed/*.parquet
-
-# Trained model binaries
-models/*.joblib
-models/*.pkl
-models/*.pickle
+# Generated model checkpoints remain local except the two small verified bundles.
 models/**/*.joblib
 models/**/*.pkl
-
-# Generated audit outputs
+models/**/*.pickle
+!models/releases/reliable-v1/url.joblib
+!models/releases/reliable-v1/sms.joblib
 models/audit/*.csv
+models/releases/**/*.csv
+!models/releases/reliable-v1/audit_regressions.csv
+models/releases/reproducibility-*/
 
-# Generated metrics are small and reproducible, keep JSON
-# models/**/*.json is intentionally NOT ignored
-
-# Local caches
-.cache/
+# Detailed regenerable predictions and machine-specific runtime snapshots.
+audit/*_holdout_predictions.csv
+audit/cleanup_behavior_before.json
+audit/cleanup_behavior_after.json
+audit/history_before_repair_verification.json
+audit/tmp/

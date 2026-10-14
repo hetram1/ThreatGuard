@@ -1,0 +1,328 @@
+{
+  "created": "2023-07-02T16:11:58.597879+00:00",
+  "modified": "2023-07-03T02:26:44.646899+00:00",
+  "id": 8041387,
+  "conceptrecid": "8041386",
+  "doi": "10.5281/zenodo.8041387",
+  "conceptdoi": "10.5281/zenodo.8041386",
+  "doi_url": "https://doi.org/10.5281/zenodo.8041387",
+  "metadata": {
+    "title": "Phishing Website Dataset",
+    "doi": "10.5281/zenodo.8041387",
+    "publication_date": "2023-07-02",
+    "description": "<p>This dataset contains a collection of legitimate and phishing websites, along with information on the target brands (brands.csv) being impersonated in the phishing attacks. The dataset includes a total of 10,395 websites, 5,244 of which are legitimate and 5,151 of which are phishing websites. These websites impersonate a total of 86 different target brands.</p>\n\n<p>For phishing datasets, the files can be downloaded in a zip file with a &quot;phishing&quot; prefix, while for legitimate websites, the files can be downloaded in a zip file with a &quot;not-phishing&quot; prefix.<br>\n<br>\nIn addition, the dataset includes features such as screenshots, text, CSS, and HTML structure for each website, as well as domain information (WHOIS data), IP information, and SSL information. Each website is labeled as either legitimate or phishing and includes additional metadata such as the date it was discovered, the target brand being impersonated, and any other relevant information.</p>\n\n<p>The dataset has been curated for research purposes and can be used to analyze the effectiveness of phishing attacks, develop and evaluate anti-phishing solutions, and identify trends and patterns in phishing attacks. It is hoped that this dataset will contribute to the advancement of research in the field of cybersecurity and help improve our understanding of phishing attacks.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Putra, I Kadek Agus Ariesta",
+        "affiliation": null,
+        "orcid": "0009-0004-9122-8162"
+      }
+    ],
+    "keywords": [
+      "phishing"
+    ],
+    "version": "1",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "8041386"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Phishing Website Dataset",
+  "links": {
+    "self": "https://zenodo.org/api/records/8041387",
+    "self_html": "https://zenodo.org/records/8041387",
+    "preview_html": "https://zenodo.org/records/8041387?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.8041387",
+    "self_doi": "https://doi.org/10.5281/zenodo.8041387",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8041387",
+    "reserve_doi": "https://zenodo.org/api/records/8041387/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/8041386",
+    "parent_html": "https://zenodo.org/records/8041386",
+    "parent_doi": "https://doi.org/10.5281/zenodo.8041386",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.8041386",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:8041387/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:8041387/sequence/default",
+    "files": "https://zenodo.org/api/records/8041387/files",
+    "media_files": "https://zenodo.org/api/records/8041387/media-files",
+    "latest": "https://zenodo.org/api/records/8041387/versions/latest",
+    "latest_html": "https://zenodo.org/records/8041387/latest",
+    "versions": "https://zenodo.org/api/records/8041387/versions",
+    "draft": "https://zenodo.org/api/records/8041387/draft",
+    "access_links": "https://zenodo.org/api/records/8041387/access/links",
+    "access_grants": "https://zenodo.org/api/records/8041387/access/grants",
+    "access_users": "https://zenodo.org/api/records/8041387/access/users",
+    "access_request": "https://zenodo.org/api/records/8041387/access/request",
+    "access": "https://zenodo.org/api/records/8041387/access",
+    "communities": "https://zenodo.org/api/records/8041387/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/8041387/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/8041387/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/8041387/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/8041387/quota-increase",
+    "requests": "https://zenodo.org/api/records/8041387/requests"
+  },
+  "updated": "2023-07-03T02:26:44.646899+00:00",
+  "recid": "8041387",
+  "revision": 3,
+  "files": [
+    {
+      "id": "8f7be362-9933-446a-a8b8-244a66c578fd",
+      "key": "not-phishing_0001-0500.zip",
+      "size": 3641594889,
+      "checksum": "md5:cf446e4cec1a587d8d72be7235517848",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_0001-0500.zip/content"
+      }
+    },
+    {
+      "id": "51e4122f-b6a3-4805-8be4-31e9c7c3d22f",
+      "key": "phishing_5001-5151.zip",
+      "size": 215119563,
+      "checksum": "md5:50970df93524466719b61b24f48679e3",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_5001-5151.zip/content"
+      }
+    },
+    {
+      "id": "c7b97c27-6104-4235-a9e8-a41179646e6a",
+      "key": "brands.csv",
+      "size": 16951,
+      "checksum": "md5:4194175e26f89582dd0a641b34f897de",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/brands.csv/content"
+      }
+    },
+    {
+      "id": "7b8fbd15-89d3-49c3-af1b-506665cc5ff1",
+      "key": "phishing_3501-4000.zip",
+      "size": 793527394,
+      "checksum": "md5:7a1355fac560498accc2a90a99974575",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_3501-4000.zip/content"
+      }
+    },
+    {
+      "id": "db2cc8ed-a1af-4a28-832e-c44a692933a4",
+      "key": "not-phishing_3001-3500.zip",
+      "size": 2958194162,
+      "checksum": "md5:63873ccf15834063fea01f16578f60d7",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_3001-3500.zip/content"
+      }
+    },
+    {
+      "id": "5a73cdf1-d47e-485c-a917-e44d98fbf5e9",
+      "key": "phishing_2001-2500.zip",
+      "size": 901101998,
+      "checksum": "md5:896405a2b2f7755935b5f7bf6a01770a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_2001-2500.zip/content"
+      }
+    },
+    {
+      "id": "33eb1268-1ba6-4162-b96d-5b404b4ace1f",
+      "key": "not-phishing_0501-1000.zip",
+      "size": 2892496140,
+      "checksum": "md5:8d632750a042f8d4340d4cb640f9d9f1",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_0501-1000.zip/content"
+      }
+    },
+    {
+      "id": "7145ea2c-1e69-4150-9f05-b69e480e65ad",
+      "key": "not-phishing_4501-5000.zip",
+      "size": 2850850920,
+      "checksum": "md5:2186e9593bb7bd80e5bfcb3ecddaf4ec",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_4501-5000.zip/content"
+      }
+    },
+    {
+      "id": "28096021-b5ee-4187-ae42-0cb6a742cd0a",
+      "key": "not-phishing_5001-5244.zip",
+      "size": 1640169518,
+      "checksum": "md5:fbc1035a63b8bf84b6945e1449e94359",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_5001-5244.zip/content"
+      }
+    },
+    {
+      "id": "cd81c81f-32a0-4fab-972e-baa69fab9d39",
+      "key": "phishing_4001-4500.zip",
+      "size": 763812122,
+      "checksum": "md5:e7e6820d53a76957861bb751516f8c93",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_4001-4500.zip/content"
+      }
+    },
+    {
+      "id": "80ca98cb-c6a9-4134-a0fa-59ace003af4c",
+      "key": "phishing_0001-0500.zip",
+      "size": 808098099,
+      "checksum": "md5:5bf11b02abf019287d766b749d9d6f61",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_0001-0500.zip/content"
+      }
+    },
+    {
+      "id": "d23b4c61-b489-4e65-a8f5-aae380c2dc14",
+      "key": "not-phishing_4001-4500.zip",
+      "size": 2396154166,
+      "checksum": "md5:8bb3c3dc1dfabf3c6a333f95b1619261",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_4001-4500.zip/content"
+      }
+    },
+    {
+      "id": "a9a35846-26f6-4ba7-9fe1-b8b6e6388035",
+      "key": "phishing_4501-5000.zip",
+      "size": 851320699,
+      "checksum": "md5:f1d46f07dcc01b3c0647f3e134a4f73c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_4501-5000.zip/content"
+      }
+    },
+    {
+      "id": "826198b6-e6c4-432e-84b3-a04ae9fc01d7",
+      "key": "phishing_1501-2000.zip",
+      "size": 774473597,
+      "checksum": "md5:69ab2d53a0b4096f98741b12ddbde377",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_1501-2000.zip/content"
+      }
+    },
+    {
+      "id": "8b094df1-4281-4c48-9580-3c124326ac3d",
+      "key": "not-phishing_3501-4000.zip",
+      "size": 3093820706,
+      "checksum": "md5:77b3a19590832dfc36018b5ea79a322b",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_3501-4000.zip/content"
+      }
+    },
+    {
+      "id": "05be9670-d790-4bc1-bc96-408dea527bf0",
+      "key": "phishing_2501-3000.zip",
+      "size": 789829863,
+      "checksum": "md5:907f9f661b477a45e3eac1e28ed3ce6a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_2501-3000.zip/content"
+      }
+    },
+    {
+      "id": "d9de256d-e7ac-4d1d-8274-bc7b04bede9a",
+      "key": "not-phishing.csv",
+      "size": 107438400,
+      "checksum": "md5:f5d218eb67f5d7bd0571e8089a8fc392",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing.csv/content"
+      }
+    },
+    {
+      "id": "1c83c14c-b787-44bd-8ade-cbbf2101ff73",
+      "key": "not-phishing_1001-1500.zip",
+      "size": 2545801791,
+      "checksum": "md5:4b55e08e1e85f67dc7d57c6dd2e5db46",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_1001-1500.zip/content"
+      }
+    },
+    {
+      "id": "35f0e377-56d7-4b1e-acf3-6ddc5c524c81",
+      "key": "phishing_1001-1500.zip",
+      "size": 884739011,
+      "checksum": "md5:a64bc89da4e0e8590395be0d392ccf10",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_1001-1500.zip/content"
+      }
+    },
+    {
+      "id": "d7bfbda3-e02b-416c-bd3f-535b93cce614",
+      "key": "not-phishing_2501-3000.zip",
+      "size": 2531616440,
+      "checksum": "md5:98f9215b683340ed62c55d884fdcd818",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_2501-3000.zip/content"
+      }
+    },
+    {
+      "id": "e9043210-1d7c-4b30-b19d-7f1e3c9e786f",
+      "key": "phishing_0501-1000.zip",
+      "size": 923486275,
+      "checksum": "md5:1dd12c51bddc79e7f7b491fcffa78725",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_0501-1000.zip/content"
+      }
+    },
+    {
+      "id": "075afafc-149f-4fcb-9660-d2e021c3cbf4",
+      "key": "phishing_3001-3500.zip",
+      "size": 889699836,
+      "checksum": "md5:1d7de78695c42f92118695d17849c53c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing_3001-3500.zip/content"
+      }
+    },
+    {
+      "id": "8509cb71-e538-47e2-abeb-f589929f6d45",
+      "key": "not-phishing_2001-2500.zip",
+      "size": 2862054654,
+      "checksum": "md5:f63c8e8f265bce5d33eeedb377aa3132",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_2001-2500.zip/content"
+      }
+    },
+    {
+      "id": "0c4237c3-2307-47f7-9585-4e2fa14ac365",
+      "key": "phishing.csv",
+      "size": 61519197,
+      "checksum": "md5:513962464c413fc30b2030547a12868a",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/phishing.csv/content"
+      }
+    },
+    {
+      "id": "1bd3f0fd-b6be-46d7-87ac-b82f6196eb1b",
+      "key": "not-phishing_1501-2000.zip",
+      "size": 2329838908,
+      "checksum": "md5:caf3b0379578d38fac6c7c04fb5f459c",
+      "links": {
+        "self": "https://zenodo.org/api/records/8041387/files/not-phishing_1501-2000.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "541469"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 29417,
+    "unique_downloads": 18422,
+    "views": 6304,
+    "unique_views": 5497,
+    "version_downloads": 29406,
+    "version_unique_downloads": 18416,
+    "version_unique_views": 5470,
+    "version_views": 6275
+  },
+  "state": "done",
+  "submitted": true
+}

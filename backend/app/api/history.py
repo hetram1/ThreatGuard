@@ -31,7 +31,6 @@ def get_history(
     ),
     db: Session = Depends(get_db),
 ) -> AnalysisHistoryResponse:
-
     analyses = AnalysisRepository.get_recent(
         db,
         limit=limit,
@@ -41,9 +40,7 @@ def get_history(
 
     for analysis in analyses:
         try:
-            reasons = json.loads(
-                analysis.reasons
-            )
+            reasons = json.loads(analysis.reasons)
         except (
             json.JSONDecodeError,
             TypeError,

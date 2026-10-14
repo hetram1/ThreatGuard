@@ -1,0 +1,116 @@
+{
+  "path_sensitivity": [
+    {
+      "url": "https://docs.python.org/",
+      "risk_score": 1.53,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://docs.python.org/docs/",
+      "risk_score": 0.0,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://docs.python.org/docs/reference/",
+      "risk_score": 5.12,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://docs.python.org/3/library/urllib.parse.html",
+      "risk_score": 100.0,
+      "prediction": "phishing"
+    },
+    {
+      "url": "https://github.com/",
+      "risk_score": 97.59,
+      "prediction": "phishing"
+    },
+    {
+      "url": "https://github.com/docs/",
+      "risk_score": 0.01,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://github.com/docs/reference/",
+      "risk_score": 13.86,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://github.com/3/library/urllib.parse.html",
+      "risk_score": 100.0,
+      "prediction": "phishing"
+    },
+    {
+      "url": "https://en.wikipedia.org/",
+      "risk_score": 31.23,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://en.wikipedia.org/docs/",
+      "risk_score": 0.02,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://en.wikipedia.org/docs/reference/",
+      "risk_score": 11.17,
+      "prediction": "legitimate"
+    },
+    {
+      "url": "https://en.wikipedia.org/3/library/urllib.parse.html",
+      "risk_score": 100.0,
+      "prediction": "phishing"
+    }
+  ],
+  "python_url_engineered_contributions": [
+    {
+      "feature": "num_dots",
+      "value": 4.0,
+      "logit_contribution": 15.235716420981275
+    },
+    {
+      "feature": "path_length",
+      "value": 28.0,
+      "logit_contribution": 15.233371753348434
+    },
+    {
+      "feature": "path_token_count",
+      "value": 5.0,
+      "logit_contribution": -11.801600904151746
+    },
+    {
+      "feature": "num_slashes",
+      "value": 5.0,
+      "logit_contribution": 5.544353953405227
+    },
+    {
+      "feature": "num_special_chars",
+      "value": 10.0,
+      "logit_contribution": 3.196615332340607
+    },
+    {
+      "feature": "subdomain_count",
+      "value": 1.0,
+      "logit_contribution": -2.509840814871395
+    },
+    {
+      "feature": "letter_run_count",
+      "value": 8.0,
+      "logit_contribution": -1.6216345869913913
+    },
+    {
+      "feature": "longest_path_token",
+      "value": 7.0,
+      "logit_contribution": -1.2942237593294619
+    },
+    {
+      "feature": "num_letters",
+      "value": 40.0,
+      "logit_contribution": -0.9669570731370287
+    },
+    {
+      "feature": "longest_host_token",
+      "value": 6.0,
+      "logit_contribution": 0.891018145354069
+    }
+  ]
+}

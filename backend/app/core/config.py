@@ -15,9 +15,7 @@ class Settings:
 
     database_url: str = os.getenv(
         "DATABASE_URL",
-        "postgresql+psycopg://"
-        "threatguard:threatguard"
-        "@localhost:5432/threatguard",
+        "postgresql+psycopg://threatguard:threatguard@localhost:5432/threatguard",
     )
 
 
